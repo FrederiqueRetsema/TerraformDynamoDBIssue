@@ -23,6 +23,6 @@ Despite the error, the record is inserted in the table. Destroying the plan is i
 The scripts assume that terraform is in the directory below this one (../../terraform from the directories with the code) and that in that directory
 is also a file terraform.tfvars with the following content:'
 
-aws_access_key = "<accesskey>"
+aws_access_key = "<accesskey>" \
 aws_secret_key = "<secret access key>"
 
