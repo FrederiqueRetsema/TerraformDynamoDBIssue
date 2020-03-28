@@ -1,8 +1,9 @@
 Current date/time:
-do 26-03-2020 
-20:17
+za 28-03-2020 
+18:27
 Version Terraform:
 Terraform v0.12.24
++ provider.aws v2.55.0
 aws CLI version
 aws-cli/1.18.6 Python/3.6.0 Windows/10 botocore/1.15.6
 -----------------------------------------------------
@@ -12,8 +13,6 @@ aws-cli/1.18.6 Python/3.6.0 Windows/10 botocore/1.15.6
 [0m[1mInitializing the backend...[0m
 
 [0m[1mInitializing provider plugins...[0m
-- Checking for available provider plugins...
-- Downloading plugin for provider "aws" (hashicorp/aws) 2.54.0...
 
 The following providers do not have any version constraints in configuration,
 so the latest version was installed.
@@ -23,7 +22,7 @@ changes, it is recommended to add version = "..." constraints to the
 corresponding provider blocks in configuration, with the constraint strings
 suggested below.
 
-* provider.aws: version = "~> 2.54"
+* provider.aws: version = "~> 2.55"
 
 [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
 [0m[32m
@@ -116,11 +115,11 @@ To perform exactly these actions, run the following command to apply:
 ../../terraform apply ".\terraform.tfplans"
 -------------------------------------------
 [0m[1maws_dynamodb_table.mytable: Creating...[0m[0m
-[0m[1maws_dynamodb_table.mytable: Creation complete after 5s [id=mytable_TT][0m[0m
+[0m[1maws_dynamodb_table.mytable: Creation complete after 8s [id=mytable_TT][0m[0m
 [0m[1maws_dynamodb_table_item.mytable-item: Creating...[0m[0m
 [31m
 [1m[31mError: [0m[0m[1mError retrieving DynamoDB table item: ValidationException: The provided key element does not match the schema
-	status code: 400, request id: OUSU9TD95VVD3ED3SMIR1A2TLRVV4KQNSO5AEMVJF66Q9ASUAAJG[0m
+	status code: 400, request id: K6RD2A5SFNM36UHK9491U70PJ3VV4KQNSO5AEMVJF66Q9ASUAAJG[0m
 
 [0m  on terraform_TT.tf line 41, in resource "aws_dynamodb_table_item" "mytable-item":
   41: resource "aws_dynamodb_table_item" "mytable-item" [4m{[0m
