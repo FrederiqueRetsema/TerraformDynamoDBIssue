@@ -1,13 +1,13 @@
 Current date/time:
-Thu Mar 26 18:38:38 UTC 2020
+Sat Mar 28 16:52:15 UTC 2020
 Version Terraform:
 Terraform v0.12.24
 Version pip3
-pip 18.1 from /usr/lib/python3/dist-packages/pip (python 3.7)
+pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
 aws CLI version
-aws-cli/1.16.218 Python/3.7.5 Linux/5.3.0-42-generic botocore/1.15.29
+aws-cli/2.0.5 Python/3.7.3 Linux/3.10.0-1062.18.1.el7.x86_64 botocore/2.0.0dev9
 Version boto3
-1.12.29
+1.12.30
 -----------------------------------------------------
 ../../terraform init -var-file=../../terraform.tfvars
 -----------------------------------------------------
@@ -16,7 +16,7 @@ Version boto3
 
 [0m[1mInitializing provider plugins...[0m
 - Checking for available provider plugins...
-- Downloading plugin for provider "aws" (hashicorp/aws) 2.54.0...
+- Downloading plugin for provider "aws" (hashicorp/aws) 2.55.0...
 
 The following providers do not have any version constraints in configuration,
 so the latest version was installed.
@@ -26,7 +26,7 @@ changes, it is recommended to add version = "..." constraints to the
 corresponding provider blocks in configuration, with the constraint strings
 suggested below.
 
-* provider.aws: version = "~> 2.54"
+* provider.aws: version = "~> 2.55"
 
 [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
 [0m[32m

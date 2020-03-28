@@ -26,3 +26,6 @@ is also a file terraform.tfvars with the following content:'
 aws_access_key = "your accesskey" \
 aws_secret_key = "your secret access key"
 
+## Bug report in terraform-provider-aws
+
+The link to the bug report in terraform-provider-aws is: https://github.com/terraform-providers/terraform-provider-aws/issues/12545

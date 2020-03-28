@@ -1,3 +1,4 @@
+export TF_LOG=TRACE
 cd ./example_linux_TT
 rm *test*debug*txt
 ./test_TT.sh > ./output_test_debug_linux_TT.txt 2>&1

@@ -1,13 +1,13 @@
 Current date/time:
-Thu Mar 26 18:39:09 UTC 2020
+Sat Mar 28 16:52:50 UTC 2020
 Version Terraform:
 Terraform v0.12.24
 Version pip3
-pip 18.1 from /usr/lib/python3/dist-packages/pip (python 3.7)
+pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
 aws CLI version
-aws-cli/1.16.218 Python/3.7.5 Linux/5.3.0-42-generic botocore/1.15.29
+aws-cli/2.0.5 Python/3.7.3 Linux/3.10.0-1062.18.1.el7.x86_64 botocore/2.0.0dev9
 Version boto3
-1.12.29
+1.12.30
 -------------------------------------------------------------------------------------------------------------------------------------------------
 aws dynamodb create-table --attribute-definitions '[{"AttributeName": "hashKey", "AttributeType": "S"}, {"AttributeName": "rangeKey", "AttributeType": "S"}]' --table-name mytable_CT --key-schema '[{ "AttributeName": "hashKey", "KeyType": "HASH"}, {"AttributeName": "rangeKey", "KeyType": "RANGE"}]' --billing-mode PROVISIONED --provisioned-throughput {"ReadCapacityUnits": 1, "WriteCapacityUnits": 1}
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -35,7 +35,7 @@ aws dynamodb create-table --attribute-definitions '[{"AttributeName": "hashKey",
             }
         ],
         "TableStatus": "CREATING",
-        "CreationDateTime": 1585248696.979,
+        "CreationDateTime": "2020-03-28T16:52:53.606000+00:00",
         "ProvisionedThroughput": {
             "NumberOfDecreasesToday": 0,
             "ReadCapacityUnits": 1,
@@ -44,7 +44,7 @@ aws dynamodb create-table --attribute-definitions '[{"AttributeName": "hashKey",
         "TableSizeBytes": 0,
         "ItemCount": 0,
         "TableArn": "arn:aws:dynamodb:eu-west-1:300577164517:table/mytable_CT",
-        "TableId": "3224404e-b4bd-445f-ba18-293c012c1c77"
+        "TableId": "2e54d3ab-6181-426c-bfc6-a58f4129b257"
     }
 }
 -----------------------------------------------------
@@ -55,7 +55,7 @@ aws dynamodb create-table --attribute-definitions '[{"AttributeName": "hashKey",
 
 [0m[1mInitializing provider plugins...[0m
 - Checking for available provider plugins...
-- Downloading plugin for provider "aws" (hashicorp/aws) 2.54.0...
+- Downloading plugin for provider "aws" (hashicorp/aws) 2.55.0...
 
 The following providers do not have any version constraints in configuration,
 so the latest version was installed.
@@ -65,7 +65,7 @@ changes, it is recommended to add version = "..." constraints to the
 corresponding provider blocks in configuration, with the constraint strings
 suggested below.
 
-* provider.aws: version = "~> 2.54"
+* provider.aws: version = "~> 2.55"
 
 [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
 [0m[32m
@@ -128,7 +128,7 @@ To perform exactly these actions, run the following command to apply:
 [0m[1maws_dynamodb_table_item.mytable-item: Creating...[0m[0m
 [31m
 [1m[31mError: [0m[0m[1mError retrieving DynamoDB table item: ValidationException: The provided key element does not match the schema
-	status code: 400, request id: LUM4SNM0CTJLKGI36GHIJHDMIFVV4KQNSO5AEMVJF66Q9ASUAAJG[0m
+	status code: 400, request id: GB27OT2HLP9HSK1899A9LLDVFBVV4KQNSO5AEMVJF66Q9ASUAAJG[0m
 
 [0m  on terraform_CT.tf line 30, in resource "aws_dynamodb_table_item" "mytable-item":
   30: resource "aws_dynamodb_table_item" "mytable-item" [4m{[0m
