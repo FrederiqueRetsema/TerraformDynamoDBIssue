@@ -1,5 +1,5 @@
 Current date:
-Sat Mar 28 16:54:54 UTC 2020
+Fri Apr  3 18:30:20 UTC 2020
 --------------------------------------------------------
 ../../terraform destroy -var-file=../../terraform.tfvars
 --------------------------------------------------------
@@ -7,6 +7,6 @@ Sat Mar 28 16:54:54 UTC 2020
 [0m[1maws_dynamodb_table_item.mytable-item: Refreshing state... [id=mytable_BT|hashKey||myhashkey|][0m
 [31m
 [1m[31mError: [0m[0m[1mError retrieving DynamoDB table item: ValidationException: The provided key element does not match the schema
-	status code: 400, request id: BC85EH91HO4BD0OU1BNFUFM0VVVV4KQNSO5AEMVJF66Q9ASUAAJG[0m
+	status code: 400, request id: U5M8HNRJ5HBLEH21VQ01CKUO73VV4KQNSO5AEMVJF66Q9ASUAAJG[0m
 
 [0m[0m[0m

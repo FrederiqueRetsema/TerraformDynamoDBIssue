@@ -1,136 +1,123 @@
 Current date:
-Sat Mar 28 16:58:00 UTC 2020
+Fri Apr  3 18:33:41 UTC 2020
 --------------------------------------------------------
 ../../terraform destroy -var-file=../../terraform.tfvars
 --------------------------------------------------------
-2020/03/28 16:58:00 [INFO] Terraform version: 0.12.24  
-2020/03/28 16:58:00 [INFO] Go runtime version: go1.12.13
-2020/03/28 16:58:00 [INFO] CLI args: []string{"/home/vagrant/terraform", "destroy", "-var-file=../../terraform.tfvars"}
-2020/03/28 16:58:00 [DEBUG] Attempting to open CLI config file: /home/vagrant/.terraformrc
-2020/03/28 16:58:00 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
-2020/03/28 16:58:00 [INFO] CLI command args: []string{"destroy", "-var-file=../../terraform.tfvars"}
-2020/03/28 16:58:00 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
-2020/03/28 16:58:00 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
-2020/03/28 16:58:00 [DEBUG] New state was assigned lineage "d4b6aa53-5bae-ed7b-98ab-67b9dbc1634d"
-2020/03/28 16:58:00 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
-2020/03/28 16:58:00 [TRACE] Meta.Backend: instantiated backend of type <nil>
-2020/03/28 16:58:00 [DEBUG] checking for provider in "."
-2020/03/28 16:58:00 [DEBUG] checking for provider in "/home/vagrant"
-2020/03/28 16:58:00 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
-2020/03/28 16:58:00 [DEBUG] found provider "terraform-provider-aws_v2.55.0_x4"
-2020/03/28 16:58:00 [DEBUG] found valid plugin: "aws", "2.55.0", "/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4"
-2020/03/28 16:58:00 [DEBUG] checking for provisioner in "."
-2020/03/28 16:58:00 [DEBUG] checking for provisioner in "/home/vagrant"
-2020/03/28 16:58:00 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
-2020/03/28 16:58:00 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
-2020/03/28 16:58:00 [INFO] backend/local: starting Apply operation
-2020/03/28 16:58:00 [TRACE] backend/local: requesting state manager for workspace "default"
-2020/03/28 16:58:00 [TRACE] backend/local: state manager for workspace "default" will:
+2020/04/03 18:33:41 [INFO] Terraform version: 0.12.24  
+2020/04/03 18:33:41 [INFO] Go runtime version: go1.12.13
+2020/04/03 18:33:41 [INFO] CLI args: []string{"/home/vagrant/terraform", "destroy", "-var-file=../../terraform.tfvars"}
+2020/04/03 18:33:41 [DEBUG] Attempting to open CLI config file: /home/vagrant/.terraformrc
+2020/04/03 18:33:41 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/04/03 18:33:41 [INFO] CLI command args: []string{"destroy", "-var-file=../../terraform.tfvars"}
+2020/04/03 18:33:41 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2020/04/03 18:33:41 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2020/04/03 18:33:41 [DEBUG] New state was assigned lineage "4378c872-07fb-fecd-b7ad-0abed8c23a26"
+2020/04/03 18:33:41 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2020/04/03 18:33:41 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2020/04/03 18:33:41 [DEBUG] checking for provider in "."
+2020/04/03 18:33:41 [DEBUG] checking for provider in "/home/vagrant"
+2020/04/03 18:33:41 [DEBUG] checking for provider in ".terraform/plugins/linux_amd64"
+2020/04/03 18:33:41 [DEBUG] found provider "terraform-provider-aws_v2.56.0_x4"
+2020/04/03 18:33:41 [DEBUG] found valid plugin: "aws", "2.56.0", "/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4"
+2020/04/03 18:33:41 [DEBUG] checking for provisioner in "."
+2020/04/03 18:33:41 [DEBUG] checking for provisioner in "/home/vagrant"
+2020/04/03 18:33:41 [DEBUG] checking for provisioner in ".terraform/plugins/linux_amd64"
+2020/04/03 18:33:41 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2020/04/03 18:33:41 [INFO] backend/local: starting Apply operation
+2020/04/03 18:33:41 [TRACE] backend/local: requesting state manager for workspace "default"
+2020/04/03 18:33:41 [TRACE] backend/local: state manager for workspace "default" will:
  - read initial snapshot from terraform.tfstate
  - write new snapshots to terraform.tfstate
  - create any backup at terraform.tfstate.backup
-2020/03/28 16:58:00 [TRACE] backend/local: requesting state lock for workspace "default"
-2020/03/28 16:58:00 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
-2020/03/28 16:58:00 [TRACE] statemgr.Filesystem: existing snapshot has lineage "344a76e7-8742-54bf-78b9-d171f2df4368" serial 2
-2020/03/28 16:58:00 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
-2020/03/28 16:58:00 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
-2020/03/28 16:58:00 [TRACE] backend/local: reading remote state for workspace "default"
-2020/03/28 16:58:00 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
-2020/03/28 16:58:00 [TRACE] statemgr.Filesystem: read snapshot with lineage "344a76e7-8742-54bf-78b9-d171f2df4368" serial 2
-2020/03/28 16:58:00 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
-2020/03/28 16:58:00 [TRACE] backend/local: building context for current working directory
-2020/03/28 16:58:00 [TRACE] terraform.NewContext: starting
-2020/03/28 16:58:00 [TRACE] terraform.NewContext: resolving provider version selections
-2020/03/28 16:58:01 [TRACE] terraform.NewContext: loading provider schemas
-2020/03/28 16:58:01 [TRACE] LoadSchemas: retrieving schema for provider type "aws"
-2020-03-28T16:58:01.183Z [INFO]  plugin: configuring client automatic mTLS
-2020-03-28T16:58:01.220Z [DEBUG] plugin: starting plugin: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4 args=[/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4]
-2020-03-28T16:58:01.222Z [DEBUG] plugin: plugin started: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4 pid=8865
-2020-03-28T16:58:01.222Z [DEBUG] plugin: waiting for RPC address: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4
-2020-03-28T16:58:01.254Z [INFO]  plugin.terraform-provider-aws_v2.55.0_x4: configuring server automatic mTLS: timestamp=2020-03-28T16:58:01.243Z
-2020-03-28T16:58:01.283Z [DEBUG] plugin: using plugin: version=5
-2020/03/28 16:58:01 [TRACE] GRPCProvider: GetSchema
-2020-03-28T16:58:01.284Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: plugin address: address=/tmp/plugin042450801 network=unix timestamp=2020-03-28T16:58:01.283Z
-2020/03/28 16:58:01 [TRACE] GRPCProvider: Close
-2020-03-28T16:58:01.479Z [DEBUG] plugin: plugin process exited: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4 pid=8865
-2020-03-28T16:58:01.479Z [DEBUG] plugin: plugin exited
-2020/03/28 16:58:01 [TRACE] terraform.NewContext: complete
-2020/03/28 16:58:01 [TRACE] backend/local: finished building terraform.Context
-2020/03/28 16:58:01 [TRACE] backend/local: requesting interactive input, if necessary
-2020/03/28 16:58:01 [TRACE] Context.Input: Prompting for provider arguments
-2020/03/28 16:58:01 [TRACE] Context.Input: Provider provider.aws declared at terraform_TT.tf:12,1-15
-2020/03/28 16:58:01 [TRACE] Context.Input: Input for provider.aws: map[string]cty.Value{}
-2020/03/28 16:58:01 [TRACE] backend/local: running validation operation
-2020/03/28 16:58:01 [INFO] terraform: building graph: GraphTypeValidate
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.ConfigTransformer
-2020/03/28 16:58:01 [TRACE] ConfigTransformer: Starting for path: 
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+2020/04/03 18:33:41 [TRACE] backend/local: requesting state lock for workspace "default"
+2020/04/03 18:33:41 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2020/04/03 18:33:41 [TRACE] statemgr.Filesystem: existing snapshot has lineage "a30fc22b-04db-4d10-47c8-282a60031275" serial 2
+2020/04/03 18:33:41 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2020/04/03 18:33:41 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2020/04/03 18:33:41 [TRACE] backend/local: reading remote state for workspace "default"
+2020/04/03 18:33:41 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2020/04/03 18:33:41 [TRACE] statemgr.Filesystem: read snapshot with lineage "a30fc22b-04db-4d10-47c8-282a60031275" serial 2
+2020/04/03 18:33:41 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2020/04/03 18:33:41 [TRACE] backend/local: building context for current working directory
+2020/04/03 18:33:41 [TRACE] terraform.NewContext: starting
+2020/04/03 18:33:41 [TRACE] terraform.NewContext: resolving provider version selections
+2020/04/03 18:33:42 [TRACE] terraform.NewContext: loading provider schemas
+2020/04/03 18:33:42 [TRACE] LoadSchemas: retrieving schema for provider type "aws"
+2020-04-03T18:33:42.549Z [INFO]  plugin: configuring client automatic mTLS
+2020-04-03T18:33:42.585Z [DEBUG] plugin: starting plugin: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4 args=[/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4]
+2020-04-03T18:33:42.588Z [DEBUG] plugin: plugin started: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4 pid=15366
+2020-04-03T18:33:42.588Z [DEBUG] plugin: waiting for RPC address: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4
+2020-04-03T18:33:42.616Z [INFO]  plugin.terraform-provider-aws_v2.56.0_x4: configuring server automatic mTLS: timestamp=2020-04-03T18:33:42.606Z
+2020-04-03T18:33:42.645Z [DEBUG] plugin: using plugin: version=5
+2020/04/03 18:33:42 [TRACE] GRPCProvider: GetSchema
+2020-04-03T18:33:42.646Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: plugin address: network=unix address=/tmp/plugin238632593 timestamp=2020-04-03T18:33:42.644Z
+2020/04/03 18:33:42 [TRACE] GRPCProvider: Close
+2020-04-03T18:33:42.821Z [DEBUG] plugin: plugin process exited: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4 pid=15366
+2020-04-03T18:33:42.821Z [DEBUG] plugin: plugin exited
+2020/04/03 18:33:42 [TRACE] terraform.NewContext: complete
+2020/04/03 18:33:42 [TRACE] backend/local: finished building terraform.Context
+2020/04/03 18:33:42 [TRACE] backend/local: requesting interactive input, if necessary
+2020/04/03 18:33:42 [TRACE] Context.Input: Prompting for provider arguments
+2020/04/03 18:33:42 [TRACE] Context.Input: Provider provider.aws declared at terraform_TT.tf:12,1-15
+2020/04/03 18:33:42 [TRACE] Context.Input: Input for provider.aws: map[string]cty.Value{}
+2020/04/03 18:33:42 [TRACE] backend/local: running validation operation
+2020/04/03 18:33:42 [INFO] terraform: building graph: GraphTypeValidate
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/04/03 18:33:42 [TRACE] ConfigTransformer: Starting for path: 
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeValidatableResource
   aws_dynamodb_table_item.mytable-item - *terraform.NodeValidatableResource
   ------
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.LocalTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.OutputTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.StateTransformer
-2020/03/28 16:58:01 [TRACE] StateTransformer: creating nodes for deposed instance objects only
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
-2020/03/28 16:58:01 [TRACE] AttachResourceConfigTransformer: attaching to "aws_dynamodb_table.mytable" (*terraform.NodeValidatableResource) config from terraform_TT.tf:22,1-40
-2020/03/28 16:58:01 [TRACE] AttachResourceConfigTransformer: attaching to "aws_dynamodb_table_item.mytable-item" (*terraform.NodeValidatableResource) config from terraform_TT.tf:41,1-50
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.AttachStateTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.RootVariableTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/04/03 18:33:42 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/04/03 18:33:42 [TRACE] AttachResourceConfigTransformer: attaching to "aws_dynamodb_table.mytable" (*terraform.NodeValidatableResource) config from terraform_TT.tf:22,1-40
+2020/04/03 18:33:42 [TRACE] AttachResourceConfigTransformer: attaching to "aws_dynamodb_table_item.mytable-item" (*terraform.NodeValidatableResource) config from terraform_TT.tf:41,1-50
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeValidatableResource
   aws_dynamodb_table_item.mytable-item - *terraform.NodeValidatableResource
   var.aws_access_key - *terraform.NodeRootVariable
   var.aws_secret_key - *terraform.NodeRootVariable
   ------
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.graphTransformerMulti
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
-2020/03/28 16:58:01 [TRACE] ProviderConfigTransformer: attaching to "provider.aws" provider configuration from terraform_TT.tf:12,1-15
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/04/03 18:33:42 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/04/03 18:33:42 [TRACE] ProviderConfigTransformer: attaching to "provider.aws" provider configuration from terraform_TT.tf:12,1-15
+2020/04/03 18:33:42 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeValidatableResource
   aws_dynamodb_table_item.mytable-item - *terraform.NodeValidatableResource
   provider.aws - *terraform.NodeApplyableProvider
   var.aws_access_key - *terraform.NodeRootVariable
   var.aws_secret_key - *terraform.NodeRootVariable
   ------
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
-2020/03/28 16:58:01 [TRACE] ProviderTransformer: aws_dynamodb_table.mytable is provided by provider.aws or inherited equivalent
-2020/03/28 16:58:01 [TRACE] ProviderTransformer: aws_dynamodb_table_item.mytable-item is provided by provider.aws or inherited equivalent
-2020/03/28 16:58:01 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_dynamodb_table.mytable
-2020/03/28 16:58:01 [DEBUG] ProviderTransformer: "aws_dynamodb_table.mytable" (*terraform.NodeValidatableResource) needs provider.aws
-2020/03/28 16:58:01 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_dynamodb_table_item.mytable-item
-2020/03/28 16:58:01 [DEBUG] ProviderTransformer: "aws_dynamodb_table_item.mytable-item" (*terraform.NodeValidatableResource) needs provider.aws
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
-  aws_dynamodb_table.mytable - *terraform.NodeValidatableResource
-    provider.aws - *terraform.NodeApplyableProvider
-  aws_dynamodb_table_item.mytable-item - *terraform.NodeValidatableResource
-    provider.aws - *terraform.NodeApplyableProvider
-  provider.aws - *terraform.NodeApplyableProvider
-  var.aws_access_key - *terraform.NodeRootVariable
-  var.aws_secret_key - *terraform.NodeRootVariable
-  ------
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+2020/04/03 18:33:42 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/04/03 18:33:42 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/04/03 18:33:42 [TRACE] ProviderTransformer: aws_dynamodb_table.mytable is provided by provider.aws or inherited equivalent
+2020/04/03 18:33:42 [TRACE] ProviderTransformer: aws_dynamodb_table_item.mytable-item is provided by provider.aws or inherited equivalent
+2020/04/03 18:33:42 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_dynamodb_table.mytable
+2020/04/03 18:33:42 [DEBUG] ProviderTransformer: "aws_dynamodb_table.mytable" (*terraform.NodeValidatableResource) needs provider.aws
+2020/04/03 18:33:42 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_dynamodb_table_item.mytable-item
+2020/04/03 18:33:42 [DEBUG] ProviderTransformer: "aws_dynamodb_table_item.mytable-item" (*terraform.NodeValidatableResource) needs provider.aws
+2020/04/03 18:33:42 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeValidatableResource
     provider.aws - *terraform.NodeApplyableProvider
   aws_dynamodb_table_item.mytable-item - *terraform.NodeValidatableResource
@@ -139,20 +126,33 @@ Sat Mar 28 16:58:00 UTC 2020
   var.aws_access_key - *terraform.NodeRootVariable
   var.aws_secret_key - *terraform.NodeRootVariable
   ------
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
-2020/03/28 16:58:01 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_dynamodb_table.mytable
-2020/03/28 16:58:01 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_dynamodb_table_item.mytable-item
-2020/03/28 16:58:01 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.aws
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.ReferenceTransformer
-2020/03/28 16:58:01 [DEBUG] ReferenceTransformer: "aws_dynamodb_table.mytable" references: []
-2020/03/28 16:58:01 [DEBUG] ReferenceTransformer: "aws_dynamodb_table_item.mytable-item" references: [aws_dynamodb_table.mytable aws_dynamodb_table.mytable]
-2020/03/28 16:58:01 [DEBUG] ReferenceTransformer: "var.aws_access_key" references: []
-2020/03/28 16:58:01 [DEBUG] ReferenceTransformer: "var.aws_secret_key" references: []
-2020/03/28 16:58:01 [DEBUG] ReferenceTransformer: "provider.aws" references: [var.aws_access_key var.aws_secret_key]
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+2020/04/03 18:33:42 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/04/03 18:33:42 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/04/03 18:33:42 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  aws_dynamodb_table.mytable - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  aws_dynamodb_table_item.mytable-item - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  provider.aws - *terraform.NodeApplyableProvider
+  var.aws_access_key - *terraform.NodeRootVariable
+  var.aws_secret_key - *terraform.NodeRootVariable
+  ------
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/04/03 18:33:42 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_dynamodb_table_item.mytable-item
+2020/04/03 18:33:42 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.aws
+2020/04/03 18:33:42 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_dynamodb_table.mytable
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/04/03 18:33:42 [DEBUG] ReferenceTransformer: "var.aws_access_key" references: []
+2020/04/03 18:33:42 [DEBUG] ReferenceTransformer: "var.aws_secret_key" references: []
+2020/04/03 18:33:42 [DEBUG] ReferenceTransformer: "provider.aws" references: [var.aws_access_key var.aws_secret_key]
+2020/04/03 18:33:42 [DEBUG] ReferenceTransformer: "aws_dynamodb_table.mytable" references: []
+2020/04/03 18:33:42 [DEBUG] ReferenceTransformer: "aws_dynamodb_table_item.mytable-item" references: [aws_dynamodb_table.mytable aws_dynamodb_table.mytable]
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeValidatableResource
     provider.aws - *terraform.NodeApplyableProvider
   aws_dynamodb_table_item.mytable-item - *terraform.NodeValidatableResource
@@ -164,8 +164,8 @@ Sat Mar 28 16:58:00 UTC 2020
   var.aws_access_key - *terraform.NodeRootVariable
   var.aws_secret_key - *terraform.NodeRootVariable
   ------
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeValidatableResource
     provider.aws - *terraform.NodeApplyableProvider
   aws_dynamodb_table_item.mytable-item - *terraform.NodeValidatableResource
@@ -183,12 +183,12 @@ Sat Mar 28 16:58:00 UTC 2020
   var.aws_access_key - *terraform.NodeRootVariable
   var.aws_secret_key - *terraform.NodeRootVariable
   ------
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.TargetsTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeValidatableResource
     provider.aws - *terraform.NodeApplyableProvider
   aws_dynamodb_table_item.mytable-item - *terraform.NodeValidatableResource
@@ -210,10 +210,10 @@ Sat Mar 28 16:58:00 UTC 2020
   var.aws_access_key - *terraform.NodeRootVariable
   var.aws_secret_key - *terraform.NodeRootVariable
   ------
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.RootTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer (no changes)
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeValidatableResource
     provider.aws - *terraform.NodeApplyableProvider
   aws_dynamodb_table_item.mytable-item - *terraform.NodeValidatableResource
@@ -238,8 +238,8 @@ Sat Mar 28 16:58:00 UTC 2020
   var.aws_access_key - *terraform.NodeRootVariable
   var.aws_secret_key - *terraform.NodeRootVariable
   ------
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+2020/04/03 18:33:42 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/04/03 18:33:42 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeValidatableResource
     provider.aws - *terraform.NodeApplyableProvider
   aws_dynamodb_table_item.mytable-item - *terraform.NodeValidatableResource
@@ -257,178 +257,165 @@ Sat Mar 28 16:58:00 UTC 2020
   var.aws_access_key - *terraform.NodeRootVariable
   var.aws_secret_key - *terraform.NodeRootVariable
   ------
-2020/03/28 16:58:01 [DEBUG] Starting graph walk: walkValidate
-2020/03/28 16:58:01 [TRACE] dag/walk: updating graph
-2020/03/28 16:58:01 [TRACE] dag/walk: added new vertex: "provider.aws"
-2020/03/28 16:58:01 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
-2020/03/28 16:58:01 [TRACE] dag/walk: added new vertex: "provider.aws (close)"
-2020/03/28 16:58:01 [TRACE] dag/walk: added new vertex: "root"
-2020/03/28 16:58:01 [TRACE] dag/walk: added new vertex: "aws_dynamodb_table.mytable"
-2020/03/28 16:58:01 [TRACE] dag/walk: added new vertex: "aws_dynamodb_table_item.mytable-item"
-2020/03/28 16:58:01 [TRACE] dag/walk: added new vertex: "var.aws_access_key"
-2020/03/28 16:58:01 [TRACE] dag/walk: added new vertex: "var.aws_secret_key"
-2020/03/28 16:58:01 [TRACE] dag/walk: added edge: "provider.aws" waiting on "var.aws_secret_key"
-2020/03/28 16:58:01 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "aws_dynamodb_table_item.mytable-item"
-2020/03/28 16:58:01 [TRACE] dag/walk: added edge: "root" waiting on "provider.aws (close)"
-2020/03/28 16:58:01 [TRACE] dag/walk: added edge: "aws_dynamodb_table.mytable" waiting on "provider.aws"
-2020/03/28 16:58:01 [TRACE] dag/walk: added edge: "provider.aws" waiting on "var.aws_access_key"
-2020/03/28 16:58:01 [TRACE] dag/walk: added edge: "provider.aws (close)" waiting on "aws_dynamodb_table_item.mytable-item"
-2020/03/28 16:58:01 [TRACE] dag/walk: added edge: "aws_dynamodb_table_item.mytable-item" waiting on "aws_dynamodb_table.mytable"
-2020/03/28 16:58:01 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
-2020/03/28 16:58:01 [TRACE] dag/walk: dependencies changed for "provider.aws", sending new deps
-2020/03/28 16:58:01 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
-2020/03/28 16:58:01 [TRACE] dag/walk: dependencies changed for "root", sending new deps
-2020/03/28 16:58:01 [TRACE] dag/walk: dependencies changed for "aws_dynamodb_table.mytable", sending new deps
-2020/03/28 16:58:01 [TRACE] dag/walk: dependencies changed for "provider.aws (close)", sending new deps
-2020/03/28 16:58:01 [TRACE] dag/walk: dependencies changed for "aws_dynamodb_table_item.mytable-item", sending new deps
-2020/03/28 16:58:01 [TRACE] dag/walk: visiting "var.aws_access_key"
-2020/03/28 16:58:01 [TRACE] vertex "var.aws_access_key": starting visit (*terraform.NodeRootVariable)
-2020/03/28 16:58:01 [TRACE] vertex "var.aws_access_key": evaluating
-2020/03/28 16:58:01 [TRACE] [walkValidate] Entering eval tree: var.aws_access_key
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalSequence
-2020/03/28 16:58:01 [TRACE] [walkValidate] Exiting eval tree: var.aws_access_key
-2020/03/28 16:58:01 [TRACE] vertex "var.aws_access_key": visit complete
-2020/03/28 16:58:01 [TRACE] dag/walk: visiting "var.aws_secret_key"
-2020/03/28 16:58:01 [TRACE] vertex "var.aws_secret_key": starting visit (*terraform.NodeRootVariable)
-2020/03/28 16:58:01 [TRACE] vertex "var.aws_secret_key": evaluating
-2020/03/28 16:58:01 [TRACE] [walkValidate] Entering eval tree: var.aws_secret_key
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalSequence
-2020/03/28 16:58:01 [TRACE] [walkValidate] Exiting eval tree: var.aws_secret_key
-2020/03/28 16:58:01 [TRACE] vertex "var.aws_secret_key": visit complete
-2020/03/28 16:58:01 [TRACE] dag/walk: visiting "provider.aws"
-2020/03/28 16:58:01 [TRACE] vertex "provider.aws": starting visit (*terraform.NodeApplyableProvider)
-2020/03/28 16:58:01 [TRACE] vertex "provider.aws": evaluating
-2020/03/28 16:58:01 [TRACE] [walkValidate] Entering eval tree: provider.aws
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalSequence
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalInitProvider
-2020-03-28T16:58:01.481Z [INFO]  plugin: configuring client automatic mTLS
-2020-03-28T16:58:01.532Z [DEBUG] plugin: starting plugin: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4 args=[/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4]
-2020-03-28T16:58:01.535Z [DEBUG] plugin: plugin started: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4 pid=8872
-2020-03-28T16:58:01.535Z [DEBUG] plugin: waiting for RPC address: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4
-2020-03-28T16:58:01.573Z [INFO]  plugin.terraform-provider-aws_v2.55.0_x4: configuring server automatic mTLS: timestamp=2020-03-28T16:58:01.573Z
-2020-03-28T16:58:01.622Z [DEBUG] plugin: using plugin: version=5
-2020/03/28 16:58:01 [TRACE] BuiltinEvalContext: Initialized "aws" provider for provider.aws
-2020/03/28 16:58:01 [TRACE] <root>: eval: terraform.EvalNoop
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalOpFilter
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalSequence
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalGetProvider
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalValidateProvider
-2020/03/28 16:58:01 [TRACE] buildProviderConfig for provider.aws: using explicit config only
-2020/03/28 16:58:01 [TRACE] GRPCProvider: GetSchema
-2020-03-28T16:58:01.623Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: plugin address: network=unix address=/tmp/plugin494556488 timestamp=2020-03-28T16:58:01.622Z
-2020/03/28 16:58:01 [TRACE] GRPCProvider: PrepareProviderConfig
-2020/03/28 16:58:01 [TRACE] <root>: eval: terraform.EvalNoop
-2020/03/28 16:58:01 [TRACE] <root>: eval: terraform.EvalNoop
-2020/03/28 16:58:01 [TRACE] [walkValidate] Exiting eval tree: provider.aws
-2020/03/28 16:58:01 [TRACE] vertex "provider.aws": visit complete
-2020/03/28 16:58:01 [TRACE] dag/walk: visiting "aws_dynamodb_table.mytable"
-2020/03/28 16:58:01 [TRACE] vertex "aws_dynamodb_table.mytable": starting visit (*terraform.NodeValidatableResource)
-2020/03/28 16:58:01 [TRACE] vertex "aws_dynamodb_table.mytable": evaluating
-2020/03/28 16:58:01 [TRACE] [walkValidate] Entering eval tree: aws_dynamodb_table.mytable
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalSequence
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalGetProvider
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalValidateResource
-2020/03/28 16:58:01 [TRACE] GRPCProvider: ValidateResourceTypeConfig
-2020/03/28 16:58:01 [TRACE] [walkValidate] Exiting eval tree: aws_dynamodb_table.mytable
-2020/03/28 16:58:01 [TRACE] vertex "aws_dynamodb_table.mytable": visit complete
-2020/03/28 16:58:01 [TRACE] dag/walk: visiting "aws_dynamodb_table_item.mytable-item"
-2020/03/28 16:58:01 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": starting visit (*terraform.NodeValidatableResource)
-2020/03/28 16:58:01 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": evaluating
-2020/03/28 16:58:01 [TRACE] [walkValidate] Entering eval tree: aws_dynamodb_table_item.mytable-item
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalSequence
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalGetProvider
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalValidateResource
-2020/03/28 16:58:01 [TRACE] GRPCProvider: ValidateResourceTypeConfig
-2020/03/28 16:58:01 [TRACE] [walkValidate] Exiting eval tree: aws_dynamodb_table_item.mytable-item
-2020/03/28 16:58:01 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": visit complete
-2020/03/28 16:58:01 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
-2020/03/28 16:58:01 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
-2020/03/28 16:58:01 [TRACE] vertex "meta.count-boundary (EachMode fixup)": evaluating
-2020/03/28 16:58:01 [TRACE] [walkValidate] Entering eval tree: meta.count-boundary (EachMode fixup)
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
-2020/03/28 16:58:01 [TRACE] [walkValidate] Exiting eval tree: meta.count-boundary (EachMode fixup)
-2020/03/28 16:58:01 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
-2020/03/28 16:58:01 [TRACE] dag/walk: visiting "provider.aws (close)"
-2020/03/28 16:58:01 [TRACE] vertex "provider.aws (close)": starting visit (*terraform.graphNodeCloseProvider)
-2020/03/28 16:58:01 [TRACE] vertex "provider.aws (close)": evaluating
-2020/03/28 16:58:01 [TRACE] [walkValidate] Entering eval tree: provider.aws (close)
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalCloseProvider
-2020/03/28 16:58:01 [TRACE] GRPCProvider: Close
-2020-03-28T16:58:01.891Z [DEBUG] plugin: plugin process exited: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4 pid=8872
-2020-03-28T16:58:01.891Z [DEBUG] plugin: plugin exited
-2020/03/28 16:58:01 [TRACE] [walkValidate] Exiting eval tree: provider.aws (close)
-2020/03/28 16:58:01 [TRACE] vertex "provider.aws (close)": visit complete
-2020/03/28 16:58:01 [TRACE] dag/walk: visiting "root"
-2020/03/28 16:58:01 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
-2020/03/28 16:58:01 [TRACE] vertex "root": visit complete
-2020/03/28 16:58:01 [INFO] backend/local: apply calling Refresh
-2020/03/28 16:58:01 [INFO] terraform: building graph: GraphTypeRefresh
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.ConfigTransformer
-2020/03/28 16:58:01 [TRACE] ConfigTransformer: Starting for path: 
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+2020/04/03 18:33:42 [DEBUG] Starting graph walk: walkValidate
+2020/04/03 18:33:42 [TRACE] dag/walk: updating graph
+2020/04/03 18:33:42 [TRACE] dag/walk: added new vertex: "root"
+2020/04/03 18:33:42 [TRACE] dag/walk: added new vertex: "aws_dynamodb_table.mytable"
+2020/04/03 18:33:42 [TRACE] dag/walk: added new vertex: "aws_dynamodb_table_item.mytable-item"
+2020/04/03 18:33:42 [TRACE] dag/walk: added new vertex: "var.aws_access_key"
+2020/04/03 18:33:42 [TRACE] dag/walk: added new vertex: "var.aws_secret_key"
+2020/04/03 18:33:42 [TRACE] dag/walk: added new vertex: "provider.aws"
+2020/04/03 18:33:42 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2020/04/03 18:33:42 [TRACE] dag/walk: added new vertex: "provider.aws (close)"
+2020/04/03 18:33:42 [TRACE] dag/walk: added edge: "provider.aws" waiting on "var.aws_access_key"
+2020/04/03 18:33:42 [TRACE] dag/walk: added edge: "root" waiting on "provider.aws (close)"
+2020/04/03 18:33:42 [TRACE] dag/walk: added edge: "aws_dynamodb_table_item.mytable-item" waiting on "aws_dynamodb_table.mytable"
+2020/04/03 18:33:42 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "aws_dynamodb_table_item.mytable-item"
+2020/04/03 18:33:42 [TRACE] dag/walk: added edge: "provider.aws" waiting on "var.aws_secret_key"
+2020/04/03 18:33:42 [TRACE] dag/walk: added edge: "provider.aws (close)" waiting on "aws_dynamodb_table_item.mytable-item"
+2020/04/03 18:33:42 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2020/04/03 18:33:42 [TRACE] dag/walk: added edge: "aws_dynamodb_table.mytable" waiting on "provider.aws"
+2020/04/03 18:33:42 [TRACE] dag/walk: dependencies changed for "aws_dynamodb_table_item.mytable-item", sending new deps
+2020/04/03 18:33:42 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2020/04/03 18:33:42 [TRACE] dag/walk: dependencies changed for "provider.aws (close)", sending new deps
+2020/04/03 18:33:42 [TRACE] dag/walk: dependencies changed for "aws_dynamodb_table.mytable", sending new deps
+2020/04/03 18:33:42 [TRACE] dag/walk: dependencies changed for "provider.aws", sending new deps
+2020/04/03 18:33:42 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2020/04/03 18:33:42 [TRACE] dag/walk: visiting "var.aws_access_key"
+2020/04/03 18:33:42 [TRACE] vertex "var.aws_access_key": starting visit (*terraform.NodeRootVariable)
+2020/04/03 18:33:42 [TRACE] vertex "var.aws_access_key": evaluating
+2020/04/03 18:33:42 [TRACE] [walkValidate] Entering eval tree: var.aws_access_key
+2020/04/03 18:33:42 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/03 18:33:42 [TRACE] [walkValidate] Exiting eval tree: var.aws_access_key
+2020/04/03 18:33:42 [TRACE] vertex "var.aws_access_key": visit complete
+2020/04/03 18:33:42 [TRACE] dag/walk: visiting "var.aws_secret_key"
+2020/04/03 18:33:42 [TRACE] vertex "var.aws_secret_key": starting visit (*terraform.NodeRootVariable)
+2020/04/03 18:33:42 [TRACE] vertex "var.aws_secret_key": evaluating
+2020/04/03 18:33:42 [TRACE] [walkValidate] Entering eval tree: var.aws_secret_key
+2020/04/03 18:33:42 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/03 18:33:42 [TRACE] [walkValidate] Exiting eval tree: var.aws_secret_key
+2020/04/03 18:33:42 [TRACE] vertex "var.aws_secret_key": visit complete
+2020/04/03 18:33:42 [TRACE] dag/walk: visiting "provider.aws"
+2020/04/03 18:33:42 [TRACE] vertex "provider.aws": starting visit (*terraform.NodeApplyableProvider)
+2020/04/03 18:33:42 [TRACE] vertex "provider.aws": evaluating
+2020/04/03 18:33:42 [TRACE] [walkValidate] Entering eval tree: provider.aws
+2020/04/03 18:33:42 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/03 18:33:42 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020-04-03T18:33:42.822Z [INFO]  plugin: configuring client automatic mTLS
+2020-04-03T18:33:42.858Z [DEBUG] plugin: starting plugin: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4 args=[/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4]
+2020-04-03T18:33:42.861Z [DEBUG] plugin: plugin started: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4 pid=15373
+2020-04-03T18:33:42.861Z [DEBUG] plugin: waiting for RPC address: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4
+2020-04-03T18:33:42.903Z [INFO]  plugin.terraform-provider-aws_v2.56.0_x4: configuring server automatic mTLS: timestamp=2020-04-03T18:33:42.902Z
+2020-04-03T18:33:42.955Z [DEBUG] plugin: using plugin: version=5
+2020/04/03 18:33:42 [TRACE] BuiltinEvalContext: Initialized "aws" provider for provider.aws
+2020/04/03 18:33:42 [TRACE] <root>: eval: terraform.EvalNoop
+2020/04/03 18:33:42 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/04/03 18:33:42 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/03 18:33:42 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/04/03 18:33:42 [TRACE] <root>: eval: *terraform.EvalValidateProvider
+2020/04/03 18:33:42 [TRACE] buildProviderConfig for provider.aws: using explicit config only
+2020/04/03 18:33:42 [TRACE] GRPCProvider: GetSchema
+2020-04-03T18:33:42.956Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: plugin address: address=/tmp/plugin995320612 network=unix timestamp=2020-04-03T18:33:42.955Z
+2020/04/03 18:33:43 [TRACE] GRPCProvider: PrepareProviderConfig
+2020/04/03 18:33:43 [TRACE] <root>: eval: terraform.EvalNoop
+2020/04/03 18:33:43 [TRACE] <root>: eval: terraform.EvalNoop
+2020/04/03 18:33:43 [TRACE] [walkValidate] Exiting eval tree: provider.aws
+2020/04/03 18:33:43 [TRACE] vertex "provider.aws": visit complete
+2020/04/03 18:33:43 [TRACE] dag/walk: visiting "aws_dynamodb_table.mytable"
+2020/04/03 18:33:43 [TRACE] vertex "aws_dynamodb_table.mytable": starting visit (*terraform.NodeValidatableResource)
+2020/04/03 18:33:43 [TRACE] vertex "aws_dynamodb_table.mytable": evaluating
+2020/04/03 18:33:43 [TRACE] [walkValidate] Entering eval tree: aws_dynamodb_table.mytable
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalValidateResource
+2020/04/03 18:33:43 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2020/04/03 18:33:43 [TRACE] [walkValidate] Exiting eval tree: aws_dynamodb_table.mytable
+2020/04/03 18:33:43 [TRACE] vertex "aws_dynamodb_table.mytable": visit complete
+2020/04/03 18:33:43 [TRACE] dag/walk: visiting "aws_dynamodb_table_item.mytable-item"
+2020/04/03 18:33:43 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": starting visit (*terraform.NodeValidatableResource)
+2020/04/03 18:33:43 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": evaluating
+2020/04/03 18:33:43 [TRACE] [walkValidate] Entering eval tree: aws_dynamodb_table_item.mytable-item
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalValidateResource
+2020/04/03 18:33:43 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2020/04/03 18:33:43 [TRACE] [walkValidate] Exiting eval tree: aws_dynamodb_table_item.mytable-item
+2020/04/03 18:33:43 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": visit complete
+2020/04/03 18:33:43 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2020/04/03 18:33:43 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2020/04/03 18:33:43 [TRACE] vertex "meta.count-boundary (EachMode fixup)": evaluating
+2020/04/03 18:33:43 [TRACE] [walkValidate] Entering eval tree: meta.count-boundary (EachMode fixup)
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2020/04/03 18:33:43 [TRACE] [walkValidate] Exiting eval tree: meta.count-boundary (EachMode fixup)
+2020/04/03 18:33:43 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2020/04/03 18:33:43 [TRACE] dag/walk: visiting "provider.aws (close)"
+2020/04/03 18:33:43 [TRACE] vertex "provider.aws (close)": starting visit (*terraform.graphNodeCloseProvider)
+2020/04/03 18:33:43 [TRACE] vertex "provider.aws (close)": evaluating
+2020/04/03 18:33:43 [TRACE] [walkValidate] Entering eval tree: provider.aws (close)
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalCloseProvider
+2020/04/03 18:33:43 [TRACE] GRPCProvider: Close
+2020-04-03T18:33:43.282Z [DEBUG] plugin: plugin process exited: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4 pid=15373
+2020-04-03T18:33:43.282Z [DEBUG] plugin: plugin exited
+2020/04/03 18:33:43 [TRACE] [walkValidate] Exiting eval tree: provider.aws (close)
+2020/04/03 18:33:43 [TRACE] vertex "provider.aws (close)": visit complete
+2020/04/03 18:33:43 [TRACE] dag/walk: visiting "root"
+2020/04/03 18:33:43 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2020/04/03 18:33:43 [TRACE] vertex "root": visit complete
+2020/04/03 18:33:43 [INFO] backend/local: apply calling Refresh
+2020/04/03 18:33:43 [INFO] terraform: building graph: GraphTypeRefresh
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/04/03 18:33:43 [TRACE] ConfigTransformer: Starting for path: 
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeRefreshableManagedResource
   aws_dynamodb_table_item.mytable-item - *terraform.NodeRefreshableManagedResource
   ------
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.ConfigTransformer
-2020/03/28 16:58:01 [TRACE] ConfigTransformer: Starting for path: 
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.StateTransformer
-2020/03/28 16:58:01 [TRACE] StateTransformer: creating nodes for deposed instance objects only
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.AttachStateTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
-2020/03/28 16:58:01 [TRACE] AttachResourceConfigTransformer: attaching to "aws_dynamodb_table.mytable" (*terraform.NodeRefreshableManagedResource) config from terraform_TT.tf:22,1-40
-2020/03/28 16:58:01 [TRACE] AttachResourceConfigTransformer: attaching to "aws_dynamodb_table_item.mytable-item" (*terraform.NodeRefreshableManagedResource) config from terraform_TT.tf:41,1-50
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.RootVariableTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/04/03 18:33:43 [TRACE] ConfigTransformer: Starting for path: 
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/04/03 18:33:43 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/04/03 18:33:43 [TRACE] AttachResourceConfigTransformer: attaching to "aws_dynamodb_table_item.mytable-item" (*terraform.NodeRefreshableManagedResource) config from terraform_TT.tf:41,1-50
+2020/04/03 18:33:43 [TRACE] AttachResourceConfigTransformer: attaching to "aws_dynamodb_table.mytable" (*terraform.NodeRefreshableManagedResource) config from terraform_TT.tf:22,1-40
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeRefreshableManagedResource
   aws_dynamodb_table_item.mytable-item - *terraform.NodeRefreshableManagedResource
   var.aws_access_key - *terraform.NodeRootVariable
   var.aws_secret_key - *terraform.NodeRootVariable
   ------
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.LocalTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.OutputTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.graphTransformerMulti
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
-2020/03/28 16:58:01 [TRACE] ProviderConfigTransformer: attaching to "provider.aws" provider configuration from terraform_TT.tf:12,1-15
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/04/03 18:33:43 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/04/03 18:33:43 [TRACE] ProviderConfigTransformer: attaching to "provider.aws" provider configuration from terraform_TT.tf:12,1-15
+2020/04/03 18:33:43 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeRefreshableManagedResource
   aws_dynamodb_table_item.mytable-item - *terraform.NodeRefreshableManagedResource
   provider.aws - *terraform.NodeApplyableProvider
   var.aws_access_key - *terraform.NodeRootVariable
   var.aws_secret_key - *terraform.NodeRootVariable
   ------
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
-2020/03/28 16:58:01 [TRACE] ProviderTransformer: aws_dynamodb_table.mytable is provided by provider.aws or inherited equivalent
-2020/03/28 16:58:01 [TRACE] ProviderTransformer: aws_dynamodb_table_item.mytable-item is provided by provider.aws or inherited equivalent
-2020/03/28 16:58:01 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_dynamodb_table.mytable
-2020/03/28 16:58:01 [DEBUG] ProviderTransformer: "aws_dynamodb_table.mytable" (*terraform.NodeRefreshableManagedResource) needs provider.aws
-2020/03/28 16:58:01 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_dynamodb_table_item.mytable-item
-2020/03/28 16:58:01 [DEBUG] ProviderTransformer: "aws_dynamodb_table_item.mytable-item" (*terraform.NodeRefreshableManagedResource) needs provider.aws
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
-  aws_dynamodb_table.mytable - *terraform.NodeRefreshableManagedResource
-    provider.aws - *terraform.NodeApplyableProvider
-  aws_dynamodb_table_item.mytable-item - *terraform.NodeRefreshableManagedResource
-    provider.aws - *terraform.NodeApplyableProvider
-  provider.aws - *terraform.NodeApplyableProvider
-  var.aws_access_key - *terraform.NodeRootVariable
-  var.aws_secret_key - *terraform.NodeRootVariable
-  ------
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
-2020/03/28 16:58:01 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+2020/04/03 18:33:43 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/04/03 18:33:43 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/04/03 18:33:43 [TRACE] ProviderTransformer: aws_dynamodb_table_item.mytable-item is provided by provider.aws or inherited equivalent
+2020/04/03 18:33:43 [TRACE] ProviderTransformer: aws_dynamodb_table.mytable is provided by provider.aws or inherited equivalent
+2020/04/03 18:33:43 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_dynamodb_table_item.mytable-item
+2020/04/03 18:33:43 [DEBUG] ProviderTransformer: "aws_dynamodb_table_item.mytable-item" (*terraform.NodeRefreshableManagedResource) needs provider.aws
+2020/04/03 18:33:43 [TRACE] ProviderTransformer: exact match for provider.aws serving aws_dynamodb_table.mytable
+2020/04/03 18:33:43 [DEBUG] ProviderTransformer: "aws_dynamodb_table.mytable" (*terraform.NodeRefreshableManagedResource) needs provider.aws
+2020/04/03 18:33:43 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeRefreshableManagedResource
     provider.aws - *terraform.NodeApplyableProvider
   aws_dynamodb_table_item.mytable-item - *terraform.NodeRefreshableManagedResource
@@ -437,18 +424,31 @@ Sat Mar 28 16:58:00 UTC 2020
   var.aws_access_key - *terraform.NodeRootVariable
   var.aws_secret_key - *terraform.NodeRootVariable
   ------
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
-2020/03/28 16:58:01 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.aws
-2020/03/28 16:58:01 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_dynamodb_table.mytable
-2020/03/28 16:58:01 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_dynamodb_table_item.mytable-item
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.ReferenceTransformer
-2020/03/28 16:58:01 [DEBUG] ReferenceTransformer: "aws_dynamodb_table.mytable" references: []
-2020/03/28 16:58:01 [DEBUG] ReferenceTransformer: "aws_dynamodb_table_item.mytable-item" references: [aws_dynamodb_table.mytable aws_dynamodb_table.mytable]
-2020/03/28 16:58:01 [DEBUG] ReferenceTransformer: "var.aws_access_key" references: []
-2020/03/28 16:58:01 [DEBUG] ReferenceTransformer: "var.aws_secret_key" references: []
-2020/03/28 16:58:01 [DEBUG] ReferenceTransformer: "provider.aws" references: [var.aws_access_key var.aws_secret_key]
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+2020/04/03 18:33:43 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/04/03 18:33:43 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/04/03 18:33:43 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  aws_dynamodb_table.mytable - *terraform.NodeRefreshableManagedResource
+    provider.aws - *terraform.NodeApplyableProvider
+  aws_dynamodb_table_item.mytable-item - *terraform.NodeRefreshableManagedResource
+    provider.aws - *terraform.NodeApplyableProvider
+  provider.aws - *terraform.NodeApplyableProvider
+  var.aws_access_key - *terraform.NodeRootVariable
+  var.aws_secret_key - *terraform.NodeRootVariable
+  ------
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/04/03 18:33:43 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_dynamodb_table_item.mytable-item
+2020/04/03 18:33:43 [TRACE] AttachSchemaTransformer: attaching resource schema to aws_dynamodb_table.mytable
+2020/04/03 18:33:43 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.aws
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/04/03 18:33:43 [DEBUG] ReferenceTransformer: "aws_dynamodb_table.mytable" references: []
+2020/04/03 18:33:43 [DEBUG] ReferenceTransformer: "var.aws_access_key" references: []
+2020/04/03 18:33:43 [DEBUG] ReferenceTransformer: "var.aws_secret_key" references: []
+2020/04/03 18:33:43 [DEBUG] ReferenceTransformer: "provider.aws" references: [var.aws_access_key var.aws_secret_key]
+2020/04/03 18:33:43 [DEBUG] ReferenceTransformer: "aws_dynamodb_table_item.mytable-item" references: [aws_dynamodb_table.mytable aws_dynamodb_table.mytable]
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeRefreshableManagedResource
     provider.aws - *terraform.NodeApplyableProvider
   aws_dynamodb_table_item.mytable-item - *terraform.NodeRefreshableManagedResource
@@ -460,14 +460,14 @@ Sat Mar 28 16:58:00 UTC 2020
   var.aws_access_key - *terraform.NodeRootVariable
   var.aws_secret_key - *terraform.NodeRootVariable
   ------
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
-2020/03/28 16:58:01 [TRACE] AttachDependenciesTransformer: aws_dynamodb_table.mytable depends on []
-2020/03/28 16:58:01 [TRACE] AttachDependenciesTransformer: aws_dynamodb_table_item.mytable-item depends on [aws_dynamodb_table.mytable]
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.TargetsTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2020/04/03 18:33:43 [TRACE] AttachDependenciesTransformer: aws_dynamodb_table_item.mytable-item depends on [aws_dynamodb_table.mytable]
+2020/04/03 18:33:43 [TRACE] AttachDependenciesTransformer: aws_dynamodb_table.mytable depends on []
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeRefreshableManagedResource
     provider.aws - *terraform.NodeApplyableProvider
   aws_dynamodb_table_item.mytable-item - *terraform.NodeRefreshableManagedResource
@@ -483,10 +483,10 @@ Sat Mar 28 16:58:00 UTC 2020
   var.aws_access_key - *terraform.NodeRootVariable
   var.aws_secret_key - *terraform.NodeRootVariable
   ------
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.RootTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
-2020/03/28 16:58:01 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
-2020/03/28 16:58:01 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2020/04/03 18:33:43 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/04/03 18:33:43 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeRefreshableManagedResource
     provider.aws - *terraform.NodeApplyableProvider
   aws_dynamodb_table_item.mytable-item - *terraform.NodeRefreshableManagedResource
@@ -499,414 +499,415 @@ Sat Mar 28 16:58:00 UTC 2020
   var.aws_access_key - *terraform.NodeRootVariable
   var.aws_secret_key - *terraform.NodeRootVariable
   ------
-2020/03/28 16:58:01 [DEBUG] Starting graph walk: walkRefresh
-2020/03/28 16:58:01 [TRACE] dag/walk: updating graph
-2020/03/28 16:58:01 [TRACE] dag/walk: added new vertex: "aws_dynamodb_table_item.mytable-item"
-2020/03/28 16:58:01 [TRACE] dag/walk: added new vertex: "var.aws_access_key"
-2020/03/28 16:58:01 [TRACE] dag/walk: added new vertex: "var.aws_secret_key"
-2020/03/28 16:58:01 [TRACE] dag/walk: added new vertex: "provider.aws"
-2020/03/28 16:58:01 [TRACE] dag/walk: added new vertex: "provider.aws (close)"
-2020/03/28 16:58:01 [TRACE] dag/walk: added new vertex: "aws_dynamodb_table.mytable"
-2020/03/28 16:58:01 [TRACE] dag/walk: added edge: "provider.aws" waiting on "var.aws_access_key"
-2020/03/28 16:58:01 [TRACE] dag/walk: added edge: "provider.aws" waiting on "var.aws_secret_key"
-2020/03/28 16:58:01 [TRACE] dag/walk: added edge: "provider.aws (close)" waiting on "aws_dynamodb_table_item.mytable-item"
-2020/03/28 16:58:01 [TRACE] dag/walk: added edge: "aws_dynamodb_table.mytable" waiting on "provider.aws"
-2020/03/28 16:58:01 [TRACE] dag/walk: added edge: "aws_dynamodb_table_item.mytable-item" waiting on "aws_dynamodb_table.mytable"
-2020/03/28 16:58:01 [TRACE] dag/walk: dependencies changed for "provider.aws", sending new deps
-2020/03/28 16:58:01 [TRACE] dag/walk: dependencies changed for "provider.aws (close)", sending new deps
-2020/03/28 16:58:01 [TRACE] dag/walk: dependencies changed for "aws_dynamodb_table.mytable", sending new deps
-2020/03/28 16:58:01 [TRACE] dag/walk: dependencies changed for "aws_dynamodb_table_item.mytable-item", sending new deps
-2020/03/28 16:58:01 [TRACE] dag/walk: visiting "var.aws_access_key"
-2020/03/28 16:58:01 [TRACE] vertex "var.aws_access_key": starting visit (*terraform.NodeRootVariable)
-2020/03/28 16:58:01 [TRACE] vertex "var.aws_access_key": evaluating
-2020/03/28 16:58:01 [TRACE] [walkRefresh] Entering eval tree: var.aws_access_key
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalSequence
-2020/03/28 16:58:01 [TRACE] [walkRefresh] Exiting eval tree: var.aws_access_key
-2020/03/28 16:58:01 [TRACE] vertex "var.aws_access_key": visit complete
-2020/03/28 16:58:01 [TRACE] dag/walk: visiting "var.aws_secret_key"
-2020/03/28 16:58:01 [TRACE] vertex "var.aws_secret_key": starting visit (*terraform.NodeRootVariable)
-2020/03/28 16:58:01 [TRACE] vertex "var.aws_secret_key": evaluating
-2020/03/28 16:58:01 [TRACE] [walkRefresh] Entering eval tree: var.aws_secret_key
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalSequence
-2020/03/28 16:58:01 [TRACE] [walkRefresh] Exiting eval tree: var.aws_secret_key
-2020/03/28 16:58:01 [TRACE] vertex "var.aws_secret_key": visit complete
-2020/03/28 16:58:01 [TRACE] dag/walk: visiting "provider.aws"
-2020/03/28 16:58:01 [TRACE] vertex "provider.aws": starting visit (*terraform.NodeApplyableProvider)
-2020/03/28 16:58:01 [TRACE] vertex "provider.aws": evaluating
-2020/03/28 16:58:01 [TRACE] [walkRefresh] Entering eval tree: provider.aws
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalSequence
-2020/03/28 16:58:01 [TRACE] <root>: eval: *terraform.EvalInitProvider
-2020-03-28T16:58:01.892Z [INFO]  plugin: configuring client automatic mTLS
-2020-03-28T16:58:01.933Z [DEBUG] plugin: starting plugin: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4 args=[/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4]
-2020-03-28T16:58:01.939Z [DEBUG] plugin: plugin started: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4 pid=8880
-2020-03-28T16:58:01.939Z [DEBUG] plugin: waiting for RPC address: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4
-2020-03-28T16:58:01.969Z [INFO]  plugin.terraform-provider-aws_v2.55.0_x4: configuring server automatic mTLS: timestamp=2020-03-28T16:58:01.959Z
-2020-03-28T16:58:02.005Z [DEBUG] plugin: using plugin: version=5
-2020/03/28 16:58:02 [TRACE] BuiltinEvalContext: Initialized "aws" provider for provider.aws
-2020/03/28 16:58:02 [TRACE] <root>: eval: terraform.EvalNoop
-2020/03/28 16:58:02 [TRACE] <root>: eval: terraform.EvalNoop
-2020/03/28 16:58:02 [TRACE] <root>: eval: *terraform.EvalOpFilter
-2020/03/28 16:58:02 [TRACE] <root>: eval: *terraform.EvalSequence
-2020/03/28 16:58:02 [TRACE] <root>: eval: *terraform.EvalGetProvider
-2020/03/28 16:58:02 [TRACE] <root>: eval: *terraform.EvalOpFilter
-2020/03/28 16:58:02 [TRACE] <root>: eval: *terraform.EvalSequence
-2020/03/28 16:58:02 [TRACE] <root>: eval: *terraform.EvalConfigProvider
-2020/03/28 16:58:02 [TRACE] buildProviderConfig for provider.aws: using explicit config only
-2020/03/28 16:58:02 [TRACE] GRPCProvider: GetSchema
-2020-03-28T16:58:02.005Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: plugin address: address=/tmp/plugin876218921 network=unix timestamp=2020-03-28T16:58:02.002Z
-2020/03/28 16:58:02 [TRACE] GRPCProvider: Configure
-2020-03-28T16:58:02.186Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:02 [INFO] No assume_role block read from configuration
-2020-03-28T16:58:02.186Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:02 [INFO] Building AWS auth structure
-2020-03-28T16:58:02.186Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:02 [INFO] Setting AWS metadata API timeout to 100ms
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:03 [INFO] Ignoring AWS metadata API endpoint at default location as it doesn't return any instance-id
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:03 [INFO] AWS Auth provider used: "StaticProvider"
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:03 [DEBUG] Trying to get account information via sts:GetCallerIdentity
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:03 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: POST / HTTP/1.1
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Host: sts.amazonaws.com
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 43
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSXGIREGPI/20200328/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date, Signature=c2a1e1ca4d7f5e9b3542dc6f39e1fb314ab00f5e27e7fa43bb5677865cce8bc3
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: application/x-www-form-urlencoded; charset=utf-8
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Date: 20200328T165803Z
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Accept-Encoding: gzip
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Action=GetCallerIdentity&Version=2011-06-15
-2020-03-28T16:58:03.675Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:04 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ RESPONSE ]--------------------------------------
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: HTTP/1.1 200 OK
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Connection: close
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 410
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: text/xml
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Date: Sat, 28 Mar 2020 16:58:03 GMT
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amzn-Requestid: cf509701-a262-4285-85f9-6666863078e7
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:04 [DEBUG] [aws-sdk-go] <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:   <GetCallerIdentityResult>
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:     <Arn>arn:aws:iam::300577164517:user/ProgramAccess</Arn>
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:     <UserId>AIDAUL66LRTS2V32JNIYA</UserId>
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:     <Account>300577164517</Account>
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:   </GetCallerIdentityResult>
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:   <ResponseMetadata>
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:     <RequestId>cf509701-a262-4285-85f9-6666863078e7</RequestId>
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:   </ResponseMetadata>
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: </GetCallerIdentityResponse>
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:04 [DEBUG] Trying to get account information via sts:GetCallerIdentity
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:04 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: POST / HTTP/1.1
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Host: sts.amazonaws.com
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 43
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSXGIREGPI/20200328/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date, Signature=a10e911ec01b53fba0e9bd52734b16099710290da85b7cae624712a712b4af57
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: application/x-www-form-urlencoded; charset=utf-8
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Date: 20200328T165804Z
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Accept-Encoding: gzip
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Action=GetCallerIdentity&Version=2011-06-15
-2020-03-28T16:58:04.160Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:04 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ RESPONSE ]--------------------------------------
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: HTTP/1.1 200 OK
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Connection: close
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 410
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: text/xml
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Date: Sat, 28 Mar 2020 16:58:04 GMT
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amzn-Requestid: 9abecb26-8c9c-4bd3-86e0-b743c0918dc3
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:04 [DEBUG] [aws-sdk-go] <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:   <GetCallerIdentityResult>
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:     <Arn>arn:aws:iam::300577164517:user/ProgramAccess</Arn>
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:     <UserId>AIDAUL66LRTS2V32JNIYA</UserId>
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:     <Account>300577164517</Account>
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:   </GetCallerIdentityResult>
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:   <ResponseMetadata>
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:     <RequestId>9abecb26-8c9c-4bd3-86e0-b743c0918dc3</RequestId>
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:   </ResponseMetadata>
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: </GetCallerIdentityResponse>
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:04 [DEBUG] [aws-sdk-go] DEBUG: Request ec2/DescribeAccountAttributes Details:
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: POST / HTTP/1.1
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Host: ec2.eu-west-1.amazonaws.com
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 87
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSXGIREGPI/20200328/eu-west-1/ec2/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date, Signature=76e53b1df954fabba9cd08d4c49dbe013e4d3e8b9c5cb03762b5bc401788f430
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: application/x-www-form-urlencoded; charset=utf-8
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Date: 20200328T165804Z
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Accept-Encoding: gzip
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Action=DescribeAccountAttributes&AttributeName.1=supported-platforms&Version=2016-11-15
-2020-03-28T16:58:04.589Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020/03/28 16:58:04 [TRACE] [walkRefresh] Exiting eval tree: provider.aws
-2020/03/28 16:58:04 [TRACE] vertex "provider.aws": visit complete
-2020/03/28 16:58:04 [TRACE] dag/walk: visiting "aws_dynamodb_table.mytable"
-2020/03/28 16:58:04 [TRACE] vertex "aws_dynamodb_table.mytable": starting visit (*terraform.NodeRefreshableManagedResource)
-2020/03/28 16:58:04 [TRACE] vertex "aws_dynamodb_table.mytable": expanding dynamic subgraph
-2020/03/28 16:58:04 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
-2020/03/28 16:58:04 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+2020/04/03 18:33:43 [DEBUG] Starting graph walk: walkRefresh
+2020/04/03 18:33:43 [TRACE] dag/walk: updating graph
+2020/04/03 18:33:43 [TRACE] dag/walk: added new vertex: "aws_dynamodb_table.mytable"
+2020/04/03 18:33:43 [TRACE] dag/walk: added new vertex: "var.aws_access_key"
+2020/04/03 18:33:43 [TRACE] dag/walk: added new vertex: "var.aws_secret_key"
+2020/04/03 18:33:43 [TRACE] dag/walk: added new vertex: "provider.aws"
+2020/04/03 18:33:43 [TRACE] dag/walk: added new vertex: "provider.aws (close)"
+2020/04/03 18:33:43 [TRACE] dag/walk: added new vertex: "aws_dynamodb_table_item.mytable-item"
+2020/04/03 18:33:43 [TRACE] dag/walk: added edge: "provider.aws" waiting on "var.aws_secret_key"
+2020/04/03 18:33:43 [TRACE] dag/walk: added edge: "aws_dynamodb_table_item.mytable-item" waiting on "aws_dynamodb_table.mytable"
+2020/04/03 18:33:43 [TRACE] dag/walk: added edge: "provider.aws (close)" waiting on "aws_dynamodb_table_item.mytable-item"
+2020/04/03 18:33:43 [TRACE] dag/walk: added edge: "aws_dynamodb_table.mytable" waiting on "provider.aws"
+2020/04/03 18:33:43 [TRACE] dag/walk: added edge: "provider.aws" waiting on "var.aws_access_key"
+2020/04/03 18:33:43 [TRACE] dag/walk: dependencies changed for "provider.aws", sending new deps
+2020/04/03 18:33:43 [TRACE] dag/walk: dependencies changed for "aws_dynamodb_table_item.mytable-item", sending new deps
+2020/04/03 18:33:43 [TRACE] dag/walk: dependencies changed for "provider.aws (close)", sending new deps
+2020/04/03 18:33:43 [TRACE] dag/walk: dependencies changed for "aws_dynamodb_table.mytable", sending new deps
+2020/04/03 18:33:43 [TRACE] dag/walk: visiting "var.aws_access_key"
+2020/04/03 18:33:43 [TRACE] vertex "var.aws_access_key": starting visit (*terraform.NodeRootVariable)
+2020/04/03 18:33:43 [TRACE] vertex "var.aws_access_key": evaluating
+2020/04/03 18:33:43 [TRACE] [walkRefresh] Entering eval tree: var.aws_access_key
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/03 18:33:43 [TRACE] [walkRefresh] Exiting eval tree: var.aws_access_key
+2020/04/03 18:33:43 [TRACE] vertex "var.aws_access_key": visit complete
+2020/04/03 18:33:43 [TRACE] dag/walk: visiting "var.aws_secret_key"
+2020/04/03 18:33:43 [TRACE] vertex "var.aws_secret_key": starting visit (*terraform.NodeRootVariable)
+2020/04/03 18:33:43 [TRACE] vertex "var.aws_secret_key": evaluating
+2020/04/03 18:33:43 [TRACE] [walkRefresh] Entering eval tree: var.aws_secret_key
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/03 18:33:43 [TRACE] [walkRefresh] Exiting eval tree: var.aws_secret_key
+2020/04/03 18:33:43 [TRACE] vertex "var.aws_secret_key": visit complete
+2020/04/03 18:33:43 [TRACE] dag/walk: visiting "provider.aws"
+2020/04/03 18:33:43 [TRACE] vertex "provider.aws": starting visit (*terraform.NodeApplyableProvider)
+2020/04/03 18:33:43 [TRACE] vertex "provider.aws": evaluating
+2020/04/03 18:33:43 [TRACE] [walkRefresh] Entering eval tree: provider.aws
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020-04-03T18:33:43.283Z [INFO]  plugin: configuring client automatic mTLS
+2020-04-03T18:33:43.319Z [DEBUG] plugin: starting plugin: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4 args=[/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4]
+2020-04-03T18:33:43.322Z [DEBUG] plugin: plugin started: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4 pid=15380
+2020-04-03T18:33:43.322Z [DEBUG] plugin: waiting for RPC address: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4
+2020-04-03T18:33:43.357Z [INFO]  plugin.terraform-provider-aws_v2.56.0_x4: configuring server automatic mTLS: timestamp=2020-04-03T18:33:43.348Z
+2020-04-03T18:33:43.408Z [DEBUG] plugin: using plugin: version=5
+2020/04/03 18:33:43 [TRACE] BuiltinEvalContext: Initialized "aws" provider for provider.aws
+2020/04/03 18:33:43 [TRACE] <root>: eval: terraform.EvalNoop
+2020/04/03 18:33:43 [TRACE] <root>: eval: terraform.EvalNoop
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/03 18:33:43 [TRACE] <root>: eval: *terraform.EvalConfigProvider
+2020/04/03 18:33:43 [TRACE] buildProviderConfig for provider.aws: using explicit config only
+2020/04/03 18:33:43 [TRACE] GRPCProvider: GetSchema
+2020-04-03T18:33:43.409Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: plugin address: address=/tmp/plugin650505703 network=unix timestamp=2020-04-03T18:33:43.407Z
+2020/04/03 18:33:43 [TRACE] GRPCProvider: Configure
+2020-04-03T18:33:43.660Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:43 [INFO] No assume_role block read from configuration
+2020-04-03T18:33:43.660Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:43 [INFO] Building AWS auth structure
+2020-04-03T18:33:43.660Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:43 [INFO] Setting AWS metadata API timeout to 100ms
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:45 [INFO] Ignoring AWS metadata API endpoint at default location as it doesn't return any instance-id
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:45 [INFO] AWS Auth provider used: "StaticProvider"
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:45 [DEBUG] Trying to get account information via sts:GetCallerIdentity
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:45 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: POST / HTTP/1.1
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Host: sts.amazonaws.com
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 43
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSRZ4F76QP/20200403/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date, Signature=bdbb58343e2ff40756e46666da5efaae16e60647924a4af4944f8844cb6c050b
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: application/x-www-form-urlencoded; charset=utf-8
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Date: 20200403T183345Z
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Accept-Encoding: gzip
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Action=GetCallerIdentity&Version=2011-06-15
+2020-04-03T18:33:45.051Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:45 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ RESPONSE ]--------------------------------------
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: HTTP/1.1 200 OK
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Connection: close
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 410
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: text/xml
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Date: Fri, 03 Apr 2020 18:33:45 GMT
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amzn-Requestid: efc79a99-133d-435c-b6c1-7d9dac1cb9ee
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:45 [DEBUG] [aws-sdk-go] <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:   <GetCallerIdentityResult>
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:     <Arn>arn:aws:iam::300577164517:user/ProgramAccess</Arn>
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:     <UserId>AIDAUL66LRTS2V32JNIYA</UserId>
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:     <Account>300577164517</Account>
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:   </GetCallerIdentityResult>
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:   <ResponseMetadata>
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:     <RequestId>efc79a99-133d-435c-b6c1-7d9dac1cb9ee</RequestId>
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:   </ResponseMetadata>
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: </GetCallerIdentityResponse>
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:45 [DEBUG] Trying to get account information via sts:GetCallerIdentity
+2020-04-03T18:33:45.591Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:45 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+2020-04-03T18:33:45.592Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
+2020-04-03T18:33:45.592Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: POST / HTTP/1.1
+2020-04-03T18:33:45.592Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Host: sts.amazonaws.com
+2020-04-03T18:33:45.592Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
+2020-04-03T18:33:45.592Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 43
+2020-04-03T18:33:45.592Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSRZ4F76QP/20200403/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date, Signature=bdbb58343e2ff40756e46666da5efaae16e60647924a4af4944f8844cb6c050b
+2020-04-03T18:33:45.592Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: application/x-www-form-urlencoded; charset=utf-8
+2020-04-03T18:33:45.592Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Date: 20200403T183345Z
+2020-04-03T18:33:45.592Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Accept-Encoding: gzip
+2020-04-03T18:33:45.592Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:45.592Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Action=GetCallerIdentity&Version=2011-06-15
+2020-04-03T18:33:45.592Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ RESPONSE ]--------------------------------------
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: HTTP/1.1 200 OK
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Connection: close
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 410
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: text/xml
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Date: Fri, 03 Apr 2020 18:33:45 GMT
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amzn-Requestid: c1c78b43-492c-4573-99a4-5b55d5a0d06d
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:   <GetCallerIdentityResult>
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:     <Arn>arn:aws:iam::300577164517:user/ProgramAccess</Arn>
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:     <UserId>AIDAUL66LRTS2V32JNIYA</UserId>
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:     <Account>300577164517</Account>
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:   </GetCallerIdentityResult>
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:   <ResponseMetadata>
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:     <RequestId>c1c78b43-492c-4573-99a4-5b55d5a0d06d</RequestId>
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:   </ResponseMetadata>
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: </GetCallerIdentityResponse>
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] DEBUG: Request ec2/DescribeAccountAttributes Details:
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: POST / HTTP/1.1
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Host: ec2.eu-west-1.amazonaws.com
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 87
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSRZ4F76QP/20200403/eu-west-1/ec2/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date, Signature=5cc05df1b102fcc1faac0b42327e2d21b5504642b63e44d2a691d266ea60cd01
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: application/x-www-form-urlencoded; charset=utf-8
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Date: 20200403T183346Z
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Accept-Encoding: gzip
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Action=DescribeAccountAttributes&AttributeName.1=supported-platforms&Version=2016-11-15
+2020-04-03T18:33:46.138Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020/04/03 18:33:46 [TRACE] [walkRefresh] Exiting eval tree: provider.aws
+2020/04/03 18:33:46 [TRACE] vertex "provider.aws": visit complete
+2020/04/03 18:33:46 [TRACE] dag/walk: visiting "aws_dynamodb_table.mytable"
+2020/04/03 18:33:46 [TRACE] vertex "aws_dynamodb_table.mytable": starting visit (*terraform.NodeRefreshableManagedResource)
+2020/04/03 18:33:46 [TRACE] vertex "aws_dynamodb_table.mytable": expanding dynamic subgraph
+2020/04/03 18:33:46 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2020/04/03 18:33:46 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
   aws_dynamodb_table.mytable - *terraform.NodeRefreshableManagedResourceInstance
   ------
-2020/03/28 16:58:04 [TRACE] Executing graph transform *terraform.OrphanResourceCountTransformer
-2020/03/28 16:58:04 [TRACE] Completed graph transform *terraform.OrphanResourceCountTransformer (no changes)
-2020/03/28 16:58:04 [TRACE] Executing graph transform *terraform.AttachStateTransformer
-2020/03/28 16:58:04 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
-2020/03/28 16:58:04 [TRACE] Executing graph transform *terraform.TargetsTransformer
-2020/03/28 16:58:04 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
-2020/03/28 16:58:04 [TRACE] Executing graph transform *terraform.ReferenceTransformer
-2020/03/28 16:58:04 [DEBUG] ReferenceTransformer: "aws_dynamodb_table.mytable" references: []
-2020/03/28 16:58:04 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
-2020/03/28 16:58:04 [TRACE] Executing graph transform *terraform.RootTransformer
-2020/03/28 16:58:04 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
-2020/03/28 16:58:04 [TRACE] vertex "aws_dynamodb_table.mytable": entering dynamic subgraph
-2020/03/28 16:58:04 [TRACE] dag/walk: updating graph
-2020/03/28 16:58:04 [TRACE] dag/walk: added new vertex: "aws_dynamodb_table.mytable"
-2020/03/28 16:58:04 [TRACE] dag/walk: visiting "aws_dynamodb_table.mytable"
-2020/03/28 16:58:04 [TRACE] vertex "aws_dynamodb_table.mytable": starting visit (*terraform.NodeRefreshableManagedResourceInstance)
-2020/03/28 16:58:04 [TRACE] NodeRefreshableManagedResourceInstance: aws_dynamodb_table.mytable will be refreshed
-2020/03/28 16:58:04 [TRACE] vertex "aws_dynamodb_table.mytable": evaluating
-2020/03/28 16:58:04 [TRACE] [walkRefresh] Entering eval tree: aws_dynamodb_table.mytable
-2020/03/28 16:58:04 [TRACE] <root>: eval: *terraform.EvalSequence
-2020/03/28 16:58:04 [TRACE] <root>: eval: *terraform.EvalGetProvider
-2020/03/28 16:58:04 [TRACE] <root>: eval: *terraform.EvalReadState
-2020/03/28 16:58:04 [TRACE] EvalReadState: reading state for aws_dynamodb_table.mytable
-2020/03/28 16:58:04 [TRACE] UpgradeResourceState: schema version of aws_dynamodb_table.mytable is still 1; calling provider "registry.terraform.io/-/aws" for any other minor fixups
-2020/03/28 16:58:04 [TRACE] GRPCProvider: UpgradeResourceState
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:04 [DEBUG] [aws-sdk-go] DEBUG: Response ec2/DescribeAccountAttributes Details:
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ RESPONSE ]--------------------------------------
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: HTTP/1.1 200 OK
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Connection: close
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 540
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: text/xml;charset=UTF-8
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Date: Sat, 28 Mar 2020 16:58:04 GMT
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Server: AmazonEC2
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:04 [DEBUG] [aws-sdk-go] <?xml version="1.0" encoding="UTF-8"?>
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: <DescribeAccountAttributesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:     <requestId>f5120c9b-215d-491d-ad97-729a80f71a98</requestId>
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:     <accountAttributeSet>
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:         <item>
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:             <attributeName>supported-platforms</attributeName>
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:             <attributeValueSet>
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:                 <item>
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:                     <attributeValue>VPC</attributeValue>
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:                 </item>
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:             </attributeValueSet>
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:         </item>
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4:     </accountAttributeSet>
-2020-03-28T16:58:04.756Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: </DescribeAccountAttributesResponse>
+2020/04/03 18:33:46 [TRACE] Executing graph transform *terraform.OrphanResourceCountTransformer
+2020/04/03 18:33:46 [TRACE] Completed graph transform *terraform.OrphanResourceCountTransformer (no changes)
+2020/04/03 18:33:46 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/04/03 18:33:46 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/04/03 18:33:46 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/04/03 18:33:46 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/04/03 18:33:46 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/04/03 18:33:46 [DEBUG] ReferenceTransformer: "aws_dynamodb_table.mytable" references: []
+2020/04/03 18:33:46 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/04/03 18:33:46 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/04/03 18:33:46 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2020/04/03 18:33:46 [TRACE] vertex "aws_dynamodb_table.mytable": entering dynamic subgraph
+2020/04/03 18:33:46 [TRACE] dag/walk: updating graph
+2020/04/03 18:33:46 [TRACE] dag/walk: added new vertex: "aws_dynamodb_table.mytable"
+2020/04/03 18:33:46 [TRACE] dag/walk: visiting "aws_dynamodb_table.mytable"
+2020/04/03 18:33:46 [TRACE] vertex "aws_dynamodb_table.mytable": starting visit (*terraform.NodeRefreshableManagedResourceInstance)
+2020/04/03 18:33:46 [TRACE] NodeRefreshableManagedResourceInstance: aws_dynamodb_table.mytable will be refreshed
+2020/04/03 18:33:46 [TRACE] vertex "aws_dynamodb_table.mytable": evaluating
+2020/04/03 18:33:46 [TRACE] [walkRefresh] Entering eval tree: aws_dynamodb_table.mytable
+2020/04/03 18:33:46 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/03 18:33:46 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/04/03 18:33:46 [TRACE] <root>: eval: *terraform.EvalReadState
+2020/04/03 18:33:46 [TRACE] EvalReadState: reading state for aws_dynamodb_table.mytable
+2020/04/03 18:33:46 [TRACE] UpgradeResourceState: schema version of aws_dynamodb_table.mytable is still 1; calling provider "registry.terraform.io/-/aws" for any other minor fixups
+2020/04/03 18:33:46 [TRACE] GRPCProvider: UpgradeResourceState
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] DEBUG: Response ec2/DescribeAccountAttributes Details:
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ RESPONSE ]--------------------------------------
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: HTTP/1.1 200 OK
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Connection: close
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 540
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: text/xml;charset=UTF-8
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Date: Fri, 03 Apr 2020 18:33:46 GMT
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Server: AmazonEC2
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amzn-Requestid: 227689ff-dffa-492f-8e27-f17a2e1041f5
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] <?xml version="1.0" encoding="UTF-8"?>
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: <DescribeAccountAttributesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:     <requestId>227689ff-dffa-492f-8e27-f17a2e1041f5</requestId>
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:     <accountAttributeSet>
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:         <item>
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:             <attributeName>supported-platforms</attributeName>
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:             <attributeValueSet>
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:                 <item>
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:                     <attributeValue>VPC</attributeValue>
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:                 </item>
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:             </attributeValueSet>
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:         </item>
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4:     </accountAttributeSet>
+2020-04-03T18:33:46.273Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: </DescribeAccountAttributesResponse>
 [0m[1maws_dynamodb_table.mytable: Refreshing state... [id=mytable_TT][0m
-2020/03/28 16:58:04 [TRACE] <root>: eval: *terraform.EvalRefreshDependencies
-2020/03/28 16:58:04 [TRACE] <root>: eval: *terraform.EvalRefresh
-2020/03/28 16:58:04 [TRACE] GRPCProvider: ReadResource
-2020-03-28T16:58:04.760Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:04 [DEBUG] [aws-sdk-go] DEBUG: Request dynamodb/DescribeTable Details:
-2020-03-28T16:58:04.760Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
-2020-03-28T16:58:04.760Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: POST / HTTP/1.1
-2020-03-28T16:58:04.760Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Host: dynamodb.eu-west-1.amazonaws.com
-2020-03-28T16:58:04.760Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
-2020-03-28T16:58:04.760Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 26
-2020-03-28T16:58:04.760Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Accept-Encoding: identity
-2020-03-28T16:58:04.760Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSXGIREGPI/20200328/eu-west-1/dynamodb/aws4_request, SignedHeaders=accept-encoding;content-length;content-type;host;x-amz-date;x-amz-target, Signature=31941645cd190e67d72fa3159568a0210674a186d2d127005dd4adbaef9e4e99
-2020-03-28T16:58:04.760Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: application/x-amz-json-1.0
-2020-03-28T16:58:04.760Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Date: 20200328T165804Z
-2020-03-28T16:58:04.760Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Target: DynamoDB_20120810.DescribeTable
-2020-03-28T16:58:04.760Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:04.760Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: {"TableName":"mytable_TT"}
-2020-03-28T16:58:04.760Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:04 [DEBUG] [aws-sdk-go] DEBUG: Response dynamodb/DescribeTable Details:
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ RESPONSE ]--------------------------------------
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: HTTP/1.1 200 OK
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Connection: close
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 573
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: application/x-amz-json-1.0
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Date: Sat, 28 Mar 2020 16:58:04 GMT
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Server: Server
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Crc32: 3493613721
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amzn-Requestid: EN13S7V2AG39DODHQIU4BVBTGVVV4KQNSO5AEMVJF66Q9ASUAAJG
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:04 [DEBUG] [aws-sdk-go] {"Table":{"AttributeDefinitions":[{"AttributeName":"hashKey","AttributeType":"S"},{"AttributeName":"rangeKey","AttributeType":"S"}],"CreationDateTime":1.585414546938E9,"ItemCount":0,"KeySchema":[{"AttributeName":"hashKey","KeyType":"HASH"},{"AttributeName":"rangeKey","KeyType":"RANGE"}],"ProvisionedThroughput":{"NumberOfDecreasesToday":0,"ReadCapacityUnits":1,"WriteCapacityUnits":1},"TableArn":"arn:aws:dynamodb:eu-west-1:300577164517:table/mytable_TT","TableId":"403d8f86-5371-4c5b-b6c8-c523cd27c371","TableName":"mytable_TT","TableSizeBytes":0,"TableStatus":"ACTIVE"}}
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:04 [DEBUG] [aws-sdk-go] DEBUG: Request dynamodb/DescribeTimeToLive Details:
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: POST / HTTP/1.1
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Host: dynamodb.eu-west-1.amazonaws.com
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 26
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Accept-Encoding: identity
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSXGIREGPI/20200328/eu-west-1/dynamodb/aws4_request, SignedHeaders=accept-encoding;content-length;content-type;host;x-amz-date;x-amz-target, Signature=1eaf0c4333020d50bc1b2b106bfd559f5e490cbd8d81d44b04aff4aef85e6f28
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: application/x-amz-json-1.0
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Date: 20200328T165804Z
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Target: DynamoDB_20120810.DescribeTimeToLive
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: {"TableName":"mytable_TT"}
-2020-03-28T16:58:04.887Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:05 [DEBUG] [aws-sdk-go] DEBUG: Response dynamodb/DescribeTimeToLive Details:
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ RESPONSE ]--------------------------------------
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: HTTP/1.1 200 OK
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Connection: close
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 57
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: application/x-amz-json-1.0
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Date: Sat, 28 Mar 2020 16:58:04 GMT
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Server: Server
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Crc32: 243044618
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amzn-Requestid: 2UR1DCHBP57RRE3I3UV094H57JVV4KQNSO5AEMVJF66Q9ASUAAJG
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:05 [DEBUG] [aws-sdk-go] {"TimeToLiveDescription":{"TimeToLiveStatus":"DISABLED"}}
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:05 [DEBUG] [aws-sdk-go] DEBUG: Request dynamodb/ListTagsOfResource Details:
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: POST / HTTP/1.1
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Host: dynamodb.eu-west-1.amazonaws.com
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 74
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Accept-Encoding: identity
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSXGIREGPI/20200328/eu-west-1/dynamodb/aws4_request, SignedHeaders=accept-encoding;content-length;content-type;host;x-amz-date;x-amz-target, Signature=a9f84e8baef495157ffc8e6928518b8990218a9cbb7b29f709a7f7dfb9d2d1f0
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: application/x-amz-json-1.0
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Date: 20200328T165805Z
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Target: DynamoDB_20120810.ListTagsOfResource
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: {"ResourceArn":"arn:aws:dynamodb:eu-west-1:300577164517:table/mytable_TT"}
-2020-03-28T16:58:05.032Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:05 [DEBUG] [aws-sdk-go] DEBUG: Response dynamodb/ListTagsOfResource Details:
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ RESPONSE ]--------------------------------------
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: HTTP/1.1 200 OK
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Connection: close
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 11
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: application/x-amz-json-1.0
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Date: Sat, 28 Mar 2020 16:58:05 GMT
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Server: Server
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Crc32: 1756070277
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amzn-Requestid: OM1E12G295KQOR6L6TG657E6TFVV4KQNSO5AEMVJF66Q9ASUAAJG
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:05 [DEBUG] [aws-sdk-go] {"Tags":[]}
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:05 [DEBUG] [aws-sdk-go] DEBUG: Request dynamodb/DescribeContinuousBackups Details:
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: POST / HTTP/1.1
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Host: dynamodb.eu-west-1.amazonaws.com
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 26
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Accept-Encoding: identity
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSXGIREGPI/20200328/eu-west-1/dynamodb/aws4_request, SignedHeaders=accept-encoding;content-length;content-type;host;x-amz-date;x-amz-target, Signature=14459d29f03c9d40bf642b2110f4e0f6ad7206ace05e22ac23848e66895ff14e
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: application/x-amz-json-1.0
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Date: 20200328T165805Z
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Target: DynamoDB_20120810.DescribeContinuousBackups
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: {"TableName":"mytable_TT"}
-2020-03-28T16:58:05.167Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020/03/28 16:58:05 [TRACE] <root>: eval: *terraform.EvalWriteState
-2020/03/28 16:58:05 [TRACE] EvalWriteState: recording 0 dependencies for aws_dynamodb_table.mytable
-2020/03/28 16:58:05 [TRACE] EvalWriteState: writing current state object for aws_dynamodb_table.mytable
-2020/03/28 16:58:05 [TRACE] [walkRefresh] Exiting eval tree: aws_dynamodb_table.mytable
-2020/03/28 16:58:05 [TRACE] vertex "aws_dynamodb_table.mytable": visit complete
-2020/03/28 16:58:05 [TRACE] vertex "aws_dynamodb_table.mytable": dynamic subgraph completed successfully
-2020/03/28 16:58:05 [TRACE] vertex "aws_dynamodb_table.mytable": visit complete
-2020/03/28 16:58:05 [TRACE] dag/walk: visiting "aws_dynamodb_table_item.mytable-item"
-2020/03/28 16:58:05 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": starting visit (*terraform.NodeRefreshableManagedResource)
-2020/03/28 16:58:05 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": expanding dynamic subgraph
-2020/03/28 16:58:05 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
-2020/03/28 16:58:05 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+2020/04/03 18:33:46 [TRACE] <root>: eval: *terraform.EvalRefreshDependencies
+2020/04/03 18:33:46 [TRACE] <root>: eval: *terraform.EvalRefresh
+2020/04/03 18:33:46 [TRACE] GRPCProvider: ReadResource
+2020-04-03T18:33:46.282Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] DEBUG: Request dynamodb/DescribeTable Details:
+2020-04-03T18:33:46.282Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
+2020-04-03T18:33:46.282Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: POST / HTTP/1.1
+2020-04-03T18:33:46.282Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Host: dynamodb.eu-west-1.amazonaws.com
+2020-04-03T18:33:46.282Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
+2020-04-03T18:33:46.282Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 26
+2020-04-03T18:33:46.282Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Accept-Encoding: identity
+2020-04-03T18:33:46.282Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSRZ4F76QP/20200403/eu-west-1/dynamodb/aws4_request, SignedHeaders=accept-encoding;content-length;content-type;host;x-amz-date;x-amz-target, Signature=13aecbc99e85000b1d0eaff666d799f9488f07cd43ceb5c6eaaf48299ba56b79
+2020-04-03T18:33:46.282Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: application/x-amz-json-1.0
+2020-04-03T18:33:46.282Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Date: 20200403T183346Z
+2020-04-03T18:33:46.282Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Target: DynamoDB_20120810.DescribeTable
+2020-04-03T18:33:46.282Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.282Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: {"TableName":"mytable_TT"}
+2020-04-03T18:33:46.282Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] DEBUG: Response dynamodb/DescribeTable Details:
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ RESPONSE ]--------------------------------------
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: HTTP/1.1 200 OK
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Connection: close
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 573
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: application/x-amz-json-1.0
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Date: Fri, 03 Apr 2020 18:33:46 GMT
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Server: Server
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Crc32: 1178364220
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amzn-Requestid: 517L4138PDMS08IRC5FQHKMFBNVV4KQNSO5AEMVJF66Q9ASUAAJG
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] {"Table":{"AttributeDefinitions":[{"AttributeName":"hashKey","AttributeType":"S"},{"AttributeName":"rangeKey","AttributeType":"S"}],"CreationDateTime":1.585938692629E9,"ItemCount":0,"KeySchema":[{"AttributeName":"hashKey","KeyType":"HASH"},{"AttributeName":"rangeKey","KeyType":"RANGE"}],"ProvisionedThroughput":{"NumberOfDecreasesToday":0,"ReadCapacityUnits":1,"WriteCapacityUnits":1},"TableArn":"arn:aws:dynamodb:eu-west-1:300577164517:table/mytable_TT","TableId":"61e7cd32-ecfe-4496-adbe-fef3a797c984","TableName":"mytable_TT","TableSizeBytes":0,"TableStatus":"ACTIVE"}}
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] DEBUG: Request dynamodb/DescribeTimeToLive Details:
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: POST / HTTP/1.1
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Host: dynamodb.eu-west-1.amazonaws.com
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 26
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Accept-Encoding: identity
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSRZ4F76QP/20200403/eu-west-1/dynamodb/aws4_request, SignedHeaders=accept-encoding;content-length;content-type;host;x-amz-date;x-amz-target, Signature=868e31ff39ef4e227d59efeba1039c9c2ddfbd921114e67389cf7889f0eb511c
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: application/x-amz-json-1.0
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Date: 20200403T183346Z
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Target: DynamoDB_20120810.DescribeTimeToLive
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: {"TableName":"mytable_TT"}
+2020-04-03T18:33:46.455Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] DEBUG: Response dynamodb/DescribeTimeToLive Details:
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ RESPONSE ]--------------------------------------
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: HTTP/1.1 200 OK
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Connection: close
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 57
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: application/x-amz-json-1.0
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Date: Fri, 03 Apr 2020 18:33:46 GMT
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Server: Server
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Crc32: 243044618
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amzn-Requestid: L5TUK14EUB7L4M2Q3G1LTF22SNVV4KQNSO5AEMVJF66Q9ASUAAJG
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] {"TimeToLiveDescription":{"TimeToLiveStatus":"DISABLED"}}
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] DEBUG: Request dynamodb/ListTagsOfResource Details:
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: POST / HTTP/1.1
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Host: dynamodb.eu-west-1.amazonaws.com
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 74
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Accept-Encoding: identity
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSRZ4F76QP/20200403/eu-west-1/dynamodb/aws4_request, SignedHeaders=accept-encoding;content-length;content-type;host;x-amz-date;x-amz-target, Signature=efeab995b7c8b3411f874b7c9ab69dbfa21b5c6d09b0f98fd7ac9ba3a8355c02
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: application/x-amz-json-1.0
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Date: 20200403T183346Z
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Target: DynamoDB_20120810.ListTagsOfResource
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: {"ResourceArn":"arn:aws:dynamodb:eu-west-1:300577164517:table/mytable_TT"}
+2020-04-03T18:33:46.577Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] DEBUG: Response dynamodb/ListTagsOfResource Details:
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ RESPONSE ]--------------------------------------
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: HTTP/1.1 200 OK
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Connection: close
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 11
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: application/x-amz-json-1.0
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Date: Fri, 03 Apr 2020 18:33:46 GMT
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Server: Server
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Crc32: 1756070277
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amzn-Requestid: BJ6UE9RMJU9H5ELBRTP4RS069BVV4KQNSO5AEMVJF66Q9ASUAAJG
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] {"Tags":[]}
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] DEBUG: Request dynamodb/DescribeContinuousBackups Details:
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: POST / HTTP/1.1
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Host: dynamodb.eu-west-1.amazonaws.com
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 26
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Accept-Encoding: identity
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSRZ4F76QP/20200403/eu-west-1/dynamodb/aws4_request, SignedHeaders=accept-encoding;content-length;content-type;host;x-amz-date;x-amz-target, Signature=950f1991414f6d15e509710000eb631ccb328f0e2f1bc9b9692ca765c8cabd7d
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: application/x-amz-json-1.0
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Date: 20200403T183346Z
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Target: DynamoDB_20120810.DescribeContinuousBackups
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: {"TableName":"mytable_TT"}
+2020-04-03T18:33:46.720Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020/04/03 18:33:46 [TRACE] <root>: eval: *terraform.EvalWriteState
+2020/04/03 18:33:46 [TRACE] EvalWriteState: recording 0 dependencies for aws_dynamodb_table.mytable
+2020/04/03 18:33:46 [TRACE] EvalWriteState: writing current state object for aws_dynamodb_table.mytable
+2020/04/03 18:33:46 [TRACE] [walkRefresh] Exiting eval tree: aws_dynamodb_table.mytable
+2020/04/03 18:33:46 [TRACE] vertex "aws_dynamodb_table.mytable": visit complete
+2020/04/03 18:33:46 [TRACE] vertex "aws_dynamodb_table.mytable": dynamic subgraph completed successfully
+2020/04/03 18:33:46 [TRACE] vertex "aws_dynamodb_table.mytable": visit complete
+2020/04/03 18:33:46 [TRACE] dag/walk: visiting "aws_dynamodb_table_item.mytable-item"
+2020/04/03 18:33:46 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": starting visit (*terraform.NodeRefreshableManagedResource)
+2020/04/03 18:33:46 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": expanding dynamic subgraph
+2020/04/03 18:33:46 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2020/04/03 18:33:46 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
   aws_dynamodb_table_item.mytable-item - *terraform.NodeRefreshableManagedResourceInstance
   ------
-2020/03/28 16:58:05 [TRACE] Executing graph transform *terraform.OrphanResourceCountTransformer
-2020/03/28 16:58:05 [TRACE] Completed graph transform *terraform.OrphanResourceCountTransformer (no changes)
-2020/03/28 16:58:05 [TRACE] Executing graph transform *terraform.AttachStateTransformer
-2020/03/28 16:58:05 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
-2020/03/28 16:58:05 [TRACE] Executing graph transform *terraform.TargetsTransformer
-2020/03/28 16:58:05 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
-2020/03/28 16:58:05 [TRACE] Executing graph transform *terraform.ReferenceTransformer
-2020/03/28 16:58:05 [DEBUG] ReferenceTransformer: "aws_dynamodb_table_item.mytable-item" references: []
-2020/03/28 16:58:05 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
-2020/03/28 16:58:05 [TRACE] Executing graph transform *terraform.RootTransformer
-2020/03/28 16:58:05 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
-2020/03/28 16:58:05 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": entering dynamic subgraph
-2020/03/28 16:58:05 [TRACE] dag/walk: updating graph
-2020/03/28 16:58:05 [TRACE] dag/walk: added new vertex: "aws_dynamodb_table_item.mytable-item"
-2020/03/28 16:58:05 [TRACE] dag/walk: visiting "aws_dynamodb_table_item.mytable-item"
-2020/03/28 16:58:05 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": starting visit (*terraform.NodeRefreshableManagedResourceInstance)
-2020/03/28 16:58:05 [TRACE] NodeRefreshableManagedResourceInstance: aws_dynamodb_table_item.mytable-item will be refreshed
-2020/03/28 16:58:05 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": evaluating
-2020/03/28 16:58:05 [TRACE] [walkRefresh] Entering eval tree: aws_dynamodb_table_item.mytable-item
-2020/03/28 16:58:05 [TRACE] <root>: eval: *terraform.EvalSequence
-2020/03/28 16:58:05 [TRACE] <root>: eval: *terraform.EvalGetProvider
-2020/03/28 16:58:05 [TRACE] <root>: eval: *terraform.EvalReadState
-2020/03/28 16:58:05 [TRACE] EvalReadState: reading state for aws_dynamodb_table_item.mytable-item
-2020/03/28 16:58:05 [TRACE] UpgradeResourceState: schema version of aws_dynamodb_table_item.mytable-item is still 0; calling provider "registry.terraform.io/-/aws" for any other minor fixups
-2020/03/28 16:58:05 [TRACE] GRPCProvider: UpgradeResourceState
-2020-03-28T16:58:05.450Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:05 [DEBUG] [aws-sdk-go] DEBUG: Response dynamodb/DescribeContinuousBackups Details:
-2020-03-28T16:58:05.450Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ RESPONSE ]--------------------------------------
-2020-03-28T16:58:05.450Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: HTTP/1.1 200 OK
-2020-03-28T16:58:05.450Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Connection: close
-2020-03-28T16:58:05.450Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 144
-2020-03-28T16:58:05.450Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: application/x-amz-json-1.0
-2020-03-28T16:58:05.450Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Date: Sat, 28 Mar 2020 16:58:05 GMT
-2020-03-28T16:58:05.450Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Server: Server
-2020-03-28T16:58:05.450Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Crc32: 430025545
-2020-03-28T16:58:05.450Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amzn-Requestid: Q2K9ATD65245KLI0TUBAPFO9DRVV4KQNSO5AEMVJF66Q9ASUAAJG
-2020-03-28T16:58:05.450Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:05.450Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:05.450Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020-03-28T16:58:05.450Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:05 [DEBUG] [aws-sdk-go] {"ContinuousBackupsDescription":{"ContinuousBackupsStatus":"ENABLED","PointInTimeRecoveryDescription":{"PointInTimeRecoveryStatus":"DISABLED"}}}
+2020/04/03 18:33:46 [TRACE] Executing graph transform *terraform.OrphanResourceCountTransformer
+2020/04/03 18:33:46 [TRACE] Completed graph transform *terraform.OrphanResourceCountTransformer (no changes)
+2020/04/03 18:33:46 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/04/03 18:33:46 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/04/03 18:33:46 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/04/03 18:33:46 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/04/03 18:33:46 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/04/03 18:33:46 [DEBUG] ReferenceTransformer: "aws_dynamodb_table_item.mytable-item" references: []
+2020/04/03 18:33:46 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/04/03 18:33:46 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/04/03 18:33:46 [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2020/04/03 18:33:46 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": entering dynamic subgraph
+2020/04/03 18:33:46 [TRACE] dag/walk: updating graph
+2020/04/03 18:33:46 [TRACE] dag/walk: added new vertex: "aws_dynamodb_table_item.mytable-item"
+2020/04/03 18:33:46 [TRACE] dag/walk: visiting "aws_dynamodb_table_item.mytable-item"
+2020/04/03 18:33:46 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": starting visit (*terraform.NodeRefreshableManagedResourceInstance)
+2020/04/03 18:33:46 [TRACE] NodeRefreshableManagedResourceInstance: aws_dynamodb_table_item.mytable-item will be refreshed
+2020/04/03 18:33:46 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": evaluating
+2020/04/03 18:33:46 [TRACE] [walkRefresh] Entering eval tree: aws_dynamodb_table_item.mytable-item
+2020/04/03 18:33:46 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/03 18:33:46 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/04/03 18:33:46 [TRACE] <root>: eval: *terraform.EvalReadState
+2020/04/03 18:33:46 [TRACE] EvalReadState: reading state for aws_dynamodb_table_item.mytable-item
+2020/04/03 18:33:46 [TRACE] UpgradeResourceState: schema version of aws_dynamodb_table_item.mytable-item is still 0; calling provider "registry.terraform.io/-/aws" for any other minor fixups
+2020/04/03 18:33:46 [TRACE] GRPCProvider: UpgradeResourceState
+2020-04-03T18:33:46.874Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] DEBUG: Response dynamodb/DescribeContinuousBackups Details:
+2020-04-03T18:33:46.874Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ RESPONSE ]--------------------------------------
+2020-04-03T18:33:46.874Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: HTTP/1.1 200 OK
+2020-04-03T18:33:46.874Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Connection: close
+2020-04-03T18:33:46.874Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 144
+2020-04-03T18:33:46.874Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: application/x-amz-json-1.0
+2020-04-03T18:33:46.874Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Date: Fri, 03 Apr 2020 18:33:46 GMT
+2020-04-03T18:33:46.874Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Server: Server
+2020-04-03T18:33:46.874Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Crc32: 430025545
+2020-04-03T18:33:46.874Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amzn-Requestid: EJIDLAS1MRD3S3SRAVD7VF5DMNVV4KQNSO5AEMVJF66Q9ASUAAJG
+2020-04-03T18:33:46.874Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.874Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.874Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020-04-03T18:33:46.874Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] {"ContinuousBackupsDescription":{"ContinuousBackupsStatus":"ENABLED","PointInTimeRecoveryDescription":{"PointInTimeRecoveryStatus":"DISABLED"}}}
 [0m[1maws_dynamodb_table_item.mytable-item: Refreshing state... [id=mytable_TT|hashKey||myhashkey|][0m
-2020/03/28 16:58:05 [TRACE] <root>: eval: *terraform.EvalRefreshDependencies
-2020/03/28 16:58:05 [TRACE] <root>: eval: *terraform.EvalRefresh
-2020/03/28 16:58:05 [TRACE] GRPCProvider: ReadResource
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:05 [DEBUG] Loading data for DynamoDB table item 'mytable_TT|hashKey||myhashkey|'
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:05 [DEBUG] [aws-sdk-go] DEBUG: Request dynamodb/GetItem Details:
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: POST / HTTP/1.1
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Host: dynamodb.eu-west-1.amazonaws.com
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 239
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Accept-Encoding: identity
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSXGIREGPI/20200328/eu-west-1/dynamodb/aws4_request, SignedHeaders=accept-encoding;content-length;content-type;host;x-amz-date;x-amz-target, Signature=d98f947ced4454524b1f8d570b9902fdba56b793cd91f298dc437e6c01d0b199
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: application/x-amz-json-1.0
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Date: 20200328T165805Z
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Target: DynamoDB_20120810.GetItem
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: {"ConsistentRead":true,"ExpressionAttributeNames":{"#a_hashKey":"hashKey","#a_noKey":"noKey","#a_rangeKey":"rangeKey"},"Key":{"hashKey":{"S":"myhashkey"}},"ProjectionExpression":"#a_hashKey, #a_rangeKey, #a_noKey","TableName":"mytable_TT"}
-2020-03-28T16:58:05.452Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
+2020/04/03 18:33:46 [TRACE] <root>: eval: *terraform.EvalRefreshDependencies
+2020/04/03 18:33:46 [TRACE] <root>: eval: *terraform.EvalRefresh
+2020/04/03 18:33:46 [TRACE] GRPCProvider: ReadResource
+2020-04-03T18:33:46.875Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] Loading data for DynamoDB table item 'mytable_TT|hashKey||myhashkey|'
+2020-04-03T18:33:46.875Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:46 [DEBUG] [aws-sdk-go] DEBUG: Request dynamodb/GetItem Details:
+2020-04-03T18:33:46.875Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ REQUEST POST-SIGN ]-----------------------------
+2020-04-03T18:33:46.875Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: POST / HTTP/1.1
+2020-04-03T18:33:46.875Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Host: dynamodb.eu-west-1.amazonaws.com
+2020-04-03T18:33:46.875Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: User-Agent: aws-sdk-go/1.29.24 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)
+2020-04-03T18:33:46.875Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 239
+2020-04-03T18:33:46.875Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Accept-Encoding: identity
+2020-04-03T18:33:46.875Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Authorization: AWS4-HMAC-SHA256 Credential=AKIAUL66LRTSRZ4F76QP/20200403/eu-west-1/dynamodb/aws4_request, SignedHeaders=accept-encoding;content-length;content-type;host;x-amz-date;x-amz-target, Signature=42d3a451cf6cafec5c4484aac19a6c58537e0347bf6e913c10920a132dc4ac9b
+2020-04-03T18:33:46.875Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: application/x-amz-json-1.0
+2020-04-03T18:33:46.875Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Date: 20200403T183346Z
+2020-04-03T18:33:46.875Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Target: DynamoDB_20120810.GetItem
+2020-04-03T18:33:46.875Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:46.876Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: {"ConsistentRead":true,"ExpressionAttributeNames":{"#a_hashKey":"hashKey","#a_noKey":"noKey","#a_rangeKey":"rangeKey"},"Key":{"hashKey":{"S":"myhashkey"}},"ProjectionExpression":"#a_rangeKey, #a_noKey, #a_hashKey","TableName":"mytable_TT"}
+2020-04-03T18:33:46.876Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
 [31m
-2020/03/28 16:58:05 [ERROR] <root>: eval: *terraform.EvalRefresh, err: Error retrieving DynamoDB table item: ValidationException: The provided key element does not match the schema
-	status code: 400, request id: A8KSOU5SCTVJCGIP7P5CQ647FBVV4KQNSO5AEMVJF66Q9ASUAAJG
-2020/03/28 16:58:05 [ERROR] <root>: eval: *terraform.EvalSequence, err: Error retrieving DynamoDB table item: ValidationException: The provided key element does not match the schema
-	status code: 400, request id: A8KSOU5SCTVJCGIP7P5CQ647FBVV4KQNSO5AEMVJF66Q9ASUAAJG
-2020/03/28 16:58:05 [TRACE] [walkRefresh] Exiting eval tree: aws_dynamodb_table_item.mytable-item
-2020/03/28 16:58:05 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": visit complete
-2020/03/28 16:58:05 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": dynamic subgraph encountered errors
-2020/03/28 16:58:05 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": visit complete
-2020/03/28 16:58:05 [TRACE] dag/walk: upstream of "provider.aws (close)" errored, so skipping
-2020/03/28 16:58:05 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
-2020/03/28 16:58:05 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:05 [DEBUG] [aws-sdk-go] DEBUG: Response dynamodb/GetItem Details:
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: ---[ RESPONSE ]--------------------------------------
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: HTTP/1.1 400 Bad Request
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Connection: close
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Length: 121
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Content-Type: application/x-amz-json-1.0
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Date: Sat, 28 Mar 2020 16:58:05 GMT
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: Server: Server
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amz-Crc32: 3485231410
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: X-Amzn-Requestid: A8KSOU5SCTVJCGIP7P5CQ647FBVV4KQNSO5AEMVJF66Q9ASUAAJG
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: -----------------------------------------------------
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:05 [DEBUG] [aws-sdk-go] {"__type":"com.amazon.coral.validate#ValidationException","message":"The provided key element does not match the schema"}
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 2020/03/28 16:58:05 [DEBUG] [aws-sdk-go] DEBUG: Validate Response dynamodb/GetItem failed, attempt 0/25, error ValidationException: The provided key element does not match the schema
-2020-03-28T16:58:05.573Z [DEBUG] plugin.terraform-provider-aws_v2.55.0_x4: 	status code: 400, request id: A8KSOU5SCTVJCGIP7P5CQ647FBVV4KQNSO5AEMVJF66Q9ASUAAJG
+2020/04/03 18:33:47 [ERROR] <root>: eval: *terraform.EvalRefresh, err: Error retrieving DynamoDB table item: ValidationException: The provided key element does not match the schema
+	status code: 400, request id: U8MMU7EHLF4IG03C75EBG66FNRVV4KQNSO5AEMVJF66Q9ASUAAJG
+2020/04/03 18:33:47 [ERROR] <root>: eval: *terraform.EvalSequence, err: Error retrieving DynamoDB table item: ValidationException: The provided key element does not match the schema
+	status code: 400, request id: U8MMU7EHLF4IG03C75EBG66FNRVV4KQNSO5AEMVJF66Q9ASUAAJG
+2020/04/03 18:33:47 [TRACE] [walkRefresh] Exiting eval tree: aws_dynamodb_table_item.mytable-item
+2020/04/03 18:33:47 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": visit complete
+2020/04/03 18:33:47 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": dynamic subgraph encountered errors
+2020/04/03 18:33:47 [TRACE] vertex "aws_dynamodb_table_item.mytable-item": visit complete
+2020/04/03 18:33:47 [TRACE] dag/walk: upstream of "provider.aws (close)" errored, so skipping
+2020/04/03 18:33:47 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2020/04/03 18:33:47 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:47 [DEBUG] [aws-sdk-go] DEBUG: Response dynamodb/GetItem Details:
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: ---[ RESPONSE ]--------------------------------------
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: HTTP/1.1 400 Bad Request
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Connection: close
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Length: 121
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Content-Type: application/x-amz-json-1.0
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Date: Fri, 03 Apr 2020 18:33:46 GMT
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: Server: Server
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amz-Crc32: 3485231410
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: X-Amzn-Requestid: U8MMU7EHLF4IG03C75EBG66FNRVV4KQNSO5AEMVJF66Q9ASUAAJG
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: -----------------------------------------------------
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:47 [DEBUG] [aws-sdk-go] {"__type":"com.amazon.coral.validate#ValidationException","message":"The provided key element does not match the schema"}
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 2020/04/03 18:33:47 [DEBUG] [aws-sdk-go] DEBUG: Validate Response dynamodb/GetItem failed, attempt 0/25, error ValidationException: The provided key element does not match the schema
+2020-04-03T18:33:47.020Z [DEBUG] plugin.terraform-provider-aws_v2.56.0_x4: 	status code: 400, request id: U8MMU7EHLF4IG03C75EBG66FNRVV4KQNSO5AEMVJF66Q9ASUAAJG
 [1m[31mError: [0m[0m[1mError retrieving DynamoDB table item: ValidationException: The provided key element does not match the schema
-	status code: 400, request id: A8KSOU5SCTVJCGIP7P5CQ647FBVV4KQNSO5AEMVJF66Q9ASUAAJG[0m
+	status code: 400, request id: U8MMU7EHLF4IG03C75EBG66FNRVV4KQNSO5AEMVJF66Q9ASUAAJG[0m
 
 [0m[0m[0m
-2020-03-28T16:58:05.577Z [DEBUG] plugin: plugin process exited: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.55.0_x4 pid=8880
-2020-03-28T16:58:05.577Z [DEBUG] plugin: plugin exited
+2020-04-03T18:33:47.024Z [DEBUG] plugin: plugin process exited: path=/home/vagrant/TerraformDynamoDBIssue/example_linux_TT/.terraform/plugins/linux_amd64/terraform-provider-aws_v2.56.0_x4 pid=15380
+2020-04-03T18:33:47.024Z [DEBUG] plugin: plugin exited

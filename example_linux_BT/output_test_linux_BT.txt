@@ -1,17 +1,17 @@
 Current date/time:
-Sat Mar 28 16:53:53 UTC 2020
+Fri Apr  3 18:29:14 UTC 2020
 Version Terraform:
 Terraform v0.12.24
 Version pip3
 pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
 aws CLI version
-aws-cli/2.0.5 Python/3.7.3 Linux/3.10.0-1062.18.1.el7.x86_64 botocore/2.0.0dev9
+aws-cli/2.0.6 Python/3.7.3 Linux/3.10.0-1062.18.1.el7.x86_64 botocore/2.0.0dev10
 Version boto3
-1.12.30
+1.12.35
 -------------------
 python3 addtable.sh
 -------------------
-{'TableDescription': {'AttributeDefinitions': [{'AttributeName': 'hashKey', 'AttributeType': 'S'}, {'AttributeName': 'rangeKey', 'AttributeType': 'S'}], 'TableName': 'mytable_BT', 'KeySchema': [{'AttributeName': 'hashKey', 'KeyType': 'HASH'}, {'AttributeName': 'rangeKey', 'KeyType': 'RANGE'}], 'TableStatus': 'CREATING', 'CreationDateTime': datetime.datetime(2020, 3, 28, 16, 53, 56, 412000, tzinfo=tzlocal()), 'ProvisionedThroughput': {'NumberOfDecreasesToday': 0, 'ReadCapacityUnits': 1, 'WriteCapacityUnits': 1}, 'TableSizeBytes': 0, 'ItemCount': 0, 'TableArn': 'arn:aws:dynamodb:eu-west-1:300577164517:table/mytable_BT', 'TableId': 'a083e88d-29fb-4034-89e4-e335191e0849'}, 'ResponseMetadata': {'RequestId': '04RTUTPJ5KGPBMV2QIS0RIH9JJVV4KQNSO5AEMVJF66Q9ASUAAJG', 'HTTPStatusCode': 200, 'HTTPHeaders': {'server': 'Server', 'date': 'Sat, 28 Mar 2020 16:53:56 GMT', 'content-type': 'application/x-amz-json-1.0', 'content-length': '586', 'connection': 'keep-alive', 'x-amzn-requestid': '04RTUTPJ5KGPBMV2QIS0RIH9JJVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '3868685311'}, 'RetryAttempts': 0}}
+{'TableDescription': {'AttributeDefinitions': [{'AttributeName': 'hashKey', 'AttributeType': 'S'}, {'AttributeName': 'rangeKey', 'AttributeType': 'S'}], 'TableName': 'mytable_BT', 'KeySchema': [{'AttributeName': 'hashKey', 'KeyType': 'HASH'}, {'AttributeName': 'rangeKey', 'KeyType': 'RANGE'}], 'TableStatus': 'CREATING', 'CreationDateTime': datetime.datetime(2020, 4, 3, 18, 29, 17, 418000, tzinfo=tzlocal()), 'ProvisionedThroughput': {'NumberOfDecreasesToday': 0, 'ReadCapacityUnits': 1, 'WriteCapacityUnits': 1}, 'TableSizeBytes': 0, 'ItemCount': 0, 'TableArn': 'arn:aws:dynamodb:eu-west-1:300577164517:table/mytable_BT', 'TableId': 'dcc6efc2-9a39-436a-b518-09e2473c1bb4'}, 'ResponseMetadata': {'RequestId': 'CE3FDQ9MJJERBDA3G0LE8L0MAVVV4KQNSO5AEMVJF66Q9ASUAAJG', 'HTTPStatusCode': 200, 'HTTPHeaders': {'server': 'Server', 'date': 'Fri, 03 Apr 2020 18:29:17 GMT', 'content-type': 'application/x-amz-json-1.0', 'content-length': '586', 'connection': 'keep-alive', 'x-amzn-requestid': 'CE3FDQ9MJJERBDA3G0LE8L0MAVVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '929973312'}, 'RetryAttempts': 0}}
 -----------------------------------------------------
 ../../terraform init -var-file=../../terraform.tfvars
 -----------------------------------------------------
@@ -20,7 +20,7 @@ python3 addtable.sh
 
 [0m[1mInitializing provider plugins...[0m
 - Checking for available provider plugins...
-- Downloading plugin for provider "aws" (hashicorp/aws) 2.55.0...
+- Downloading plugin for provider "aws" (hashicorp/aws) 2.56.0...
 
 The following providers do not have any version constraints in configuration,
 so the latest version was installed.
@@ -30,7 +30,7 @@ changes, it is recommended to add version = "..." constraints to the
 corresponding provider blocks in configuration, with the constraint strings
 suggested below.
 
-* provider.aws: version = "~> 2.55"
+* provider.aws: version = "~> 2.56"
 
 [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
 [0m[32m
@@ -93,7 +93,7 @@ To perform exactly these actions, run the following command to apply:
 [0m[1maws_dynamodb_table_item.mytable-item: Creating...[0m[0m
 [31m
 [1m[31mError: [0m[0m[1mError retrieving DynamoDB table item: ValidationException: The provided key element does not match the schema
-	status code: 400, request id: E4MC65GJSS193PA242T4JFPK9FVV4KQNSO5AEMVJF66Q9ASUAAJG[0m
+	status code: 400, request id: S2IVIDILCL50IMC734MAK2FT1JVV4KQNSO5AEMVJF66Q9ASUAAJG[0m
 
 [0m  on terraform_BT.tf line 30, in resource "aws_dynamodb_table_item" "mytable-item":
   30: resource "aws_dynamodb_table_item" "mytable-item" [4m{[0m

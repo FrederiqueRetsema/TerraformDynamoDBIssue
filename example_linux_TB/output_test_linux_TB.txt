@@ -1,13 +1,13 @@
 Current date/time:
-Sat Mar 28 16:53:19 UTC 2020
+Fri Apr  3 18:28:43 UTC 2020
 Version Terraform:
 Terraform v0.12.24
 Version pip3
 pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
 aws CLI version
-aws-cli/2.0.5 Python/3.7.3 Linux/3.10.0-1062.18.1.el7.x86_64 botocore/2.0.0dev9
+aws-cli/2.0.6 Python/3.7.3 Linux/3.10.0-1062.18.1.el7.x86_64 botocore/2.0.0dev10
 Version boto3
-1.12.30
+1.12.35
 -----------------------------------------------------
 ../../terraform init -var-file=../../terraform.tfvars
 -----------------------------------------------------
@@ -16,7 +16,7 @@ Version boto3
 
 [0m[1mInitializing provider plugins...[0m
 - Checking for available provider plugins...
-- Downloading plugin for provider "aws" (hashicorp/aws) 2.55.0...
+- Downloading plugin for provider "aws" (hashicorp/aws) 2.56.0...
 
 The following providers do not have any version constraints in configuration,
 so the latest version was installed.
@@ -26,7 +26,7 @@ changes, it is recommended to add version = "..." constraints to the
 corresponding provider blocks in configuration, with the constraint strings
 suggested below.
 
-* provider.aws: version = "~> 2.55"
+* provider.aws: version = "~> 2.56"
 
 [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
 [0m[32m
@@ -112,4 +112,4 @@ State path: terraform.tfstate[0m
 ----------------------
 python3 ./addrecord.py
 ----------------------
-{'ResponseMetadata': {'RequestId': 'G986QM5VB9CH3H5JG42BR00AUVVV4KQNSO5AEMVJF66Q9ASUAAJG', 'HTTPStatusCode': 200, 'HTTPHeaders': {'server': 'Server', 'date': 'Sat, 28 Mar 2020 16:53:53 GMT', 'content-type': 'application/x-amz-json-1.0', 'content-length': '2', 'connection': 'keep-alive', 'x-amzn-requestid': 'G986QM5VB9CH3H5JG42BR00AUVVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '2745614147'}, 'RetryAttempts': 0}}
+{'ResponseMetadata': {'RequestId': '96GOM7U1NTB675R9VHOOL3V2PJVV4KQNSO5AEMVJF66Q9ASUAAJG', 'HTTPStatusCode': 200, 'HTTPHeaders': {'server': 'Server', 'date': 'Fri, 03 Apr 2020 18:29:14 GMT', 'content-type': 'application/x-amz-json-1.0', 'content-length': '2', 'connection': 'keep-alive', 'x-amzn-requestid': '96GOM7U1NTB675R9VHOOL3V2PJVV4KQNSO5AEMVJF66Q9ASUAAJG', 'x-amz-crc32': '2745614147'}, 'RetryAttempts': 0}}
