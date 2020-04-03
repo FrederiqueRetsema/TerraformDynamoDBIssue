@@ -1,6 +1,6 @@
 "Current date:"
-do 26-03-2020 
-20:18
+za 28-03-2020 
+18:28
 --------------------------------------------------------
 ..\..\terraform destroy -var-file=..\..\terraform.tfvars
 --------------------------------------------------------
@@ -8,6 +8,6 @@ do 26-03-2020
 [0m[1maws_dynamodb_table_item.mytable-item: Refreshing state... [id=mytable_TT|hashKey||myhashkey|][0m
 [31m
 [1m[31mError: [0m[0m[1mError retrieving DynamoDB table item: ValidationException: The provided key element does not match the schema
-	status code: 400, request id: T9P0FC4DMA71T5TSH633973SQVVV4KQNSO5AEMVJF66Q9ASUAAJG[0m
+	status code: 400, request id: N2PROQEL95HMIJ8GHM8NTFAIR7VV4KQNSO5AEMVJF66Q9ASUAAJG[0m
 
 [0m[0m[0m
